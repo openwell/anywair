@@ -16,6 +16,7 @@ button {
 a:visited,
 a:link {
   text-decoration: none;
+  color: #000;
 }
 header {
   display: flex;
@@ -148,6 +149,14 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 10px;
+}
+footer p {
+  color: #5f6368;
+}
+footer a:link,
+footer a:visited {
+  color: #5f6368;
 }
 .footer_stay_connected ion-icon {
   color: #2d135a;
@@ -177,4 +186,136 @@ footer h1 {
 }
 .footer_support h4 {
   opacity: 0.8;
+}
+
+/* ********  OUR FOCUS *******/
+/* ************************/
+.our_focus_banner {
+  background: url(./images/our_focus_background_Image.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.our_focus_banner h1 {
+  padding-top: 100px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 400;
+}
+.our_focus_sections {
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.our_focus_sections > div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.our_focus_sections > div div {
+  flex: 1 1 200px;
+  padding: 20px;
+}
+.our_focus_sections > div div img {
+  max-width: 100%;
+}
+.our_focus_sections > div div p {
+  line-height: 1.5;
+  color: #5f6368;
+}
+.our_focus_sections > div div h1 {
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* About******** */
+.about_banner {
+  background: url(./images/about_us_hero.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.about_banner h1 {
+  padding-top: 50px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.about_our_story {
+  background: url(./images/about/Our_Source_textured_background_3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+}
+.about_our_story div {
+  padding-top: 50px;
+  padding-left: 100px;
+  color: #fff;
+}
+.about_our_story div h1 {
+  font-size: 100px;
+  font-weight: 400;
+}
+.know_us_more {
+  margin-top: 20px;
+  padding: 10px;
+}
+.know_us_more > h1 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.know_us_more > div {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.know_us_more div div {
+  flex: 0 1 300px;
+  background: #2d135a;
+  color: #fff;
+  padding: 20px;
+  line-height: 1.5;
+}
+.know_us_more div div h1 {
+  margin: 10px 0;
+}
+
+/********* Contact */
+.contact_banner {
+  background: url(./images/contact_banner.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.contact_banner h1 {
+  padding-top: 50px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 400;
+}
+.contact_details {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.contact_details > div {
+  display: flex;
+  justify-content: space-between;
+}
+.contact_form input {
+  display: block;
 }
