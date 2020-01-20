@@ -25,50 +25,156 @@ header {
 header .logo img {
   width: 100px;
 }
-header div:nth-of-type(2) button {
+header div ul {
   padding: 10px;
+}
+header div ul a {
+  padding: 10px;
+  font-size: 16px;
+  color: #2d135a;
+}
+header div ul a:last-of-type {
+  color: #fff;
+  background: #2d135a;
+}
+.hero_banner img {
+  width: 100%;
+  height: 600px;
+  vertical-align: top;
+}
+.sd_wan_info {
+  background: url(./images/SD-WAN.png) no-repeat;
+  max-width: 100%;
+  height: 400px;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+/* .sd_wan_info img {
+  width: 100%;
+  height: 400px;
+  vertical-align: top;
+} */
+.sd_wan_info button {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  padding: 10px 30px;
+  color: #000;
+  font-size: 16px;
+}
+.sd_wan_info h1 {
+  padding-top: 100px;
+  padding-left: 100px;
+  font-size: 40px;
+  /* position: absolute;
+  left: 40px;
+  bottom: 50px; */
+  color: #fff;
+}
+.home_industries {
+  text-align: center;
+}
+.home_industries h1 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+.home_industries_block {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.home_industries_block div {
+  margin-bottom: 40px;
+  position: relative;
+  width: 300px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.home_industries_block div:hover p:nth-of-type(2) {
+  opacity: 1;
+}
+.home_industries_block div img {
+  width: 300px;
+  vertical-align: top;
+}
+.home_industries_block div p {
+  transition: opacity 1s;
+  background: #fff;
+  color: #2d135a;
+  padding: 20px;
+  font-weight: bold;
+  /* border: 1px solid #2d135a; */
+}
+.home_industries_block div p:nth-of-type(2) {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home_industries > button {
+  padding: 10px 20px;
   font-size: 16px;
   background: #2d135a;
   color: #fff;
 }
-.hero_banner {
-  background: #2d135a;
-  color: #fff;
-  height: calc(100vh - 56.61px - 40px);
-  position: relative;
-}
-.hero_banner_text h1 {
-  font-size: 60px;
-  padding: 50px;
-  width: 800px;
-}
-.three_overlay_menu {
-  display: flex;
-  justify-content: start;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.three_overlay_menu div {
-  flex: 1;
-  position: relative;
-}
-.three_overlay_menu div h1 {
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  background: rgba(71, 22, 139, 0.85);
-  padding: 10px 10px;
-  text-align: center;
+.home_request_a_demo_banner {
+  margin-top: 20px;
+  background: url(./images/customerPage.png) no-repeat;
+  height: 400px;
   width: 100%;
+  background-size: cover;
+  background-position: top;
+  color: #fff;
 }
-.three_overlay_menu div img {
-  max-width: 100%;
-  /* height: 300px; */
+.home_request_a_demo_banner h1 {
+  font-size: 100px;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 100px;
 }
+/* .home_request_a_demo_banner img {
+  height: 400px;
+  width: 100%;
+} */
 footer {
-  padding: 10px;
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-footer ul a {
-  padding: 10px;
+.footer_stay_connected ion-icon {
+  color: #2d135a;
+  font-size: 25px;
+}
+.footer_stay_connected ion-icon:nth-of-type(1) {
+  color: #3b5998;
+}
+.footer_stay_connected ion-icon:nth-of-type(2) {
+  color: #00acee;
+}
+
+.footer_stay_connected ion-icon:nth-of-type(4) {
+  color: #0077b5;
+}
+.footer_stay_connected ion-icon:nth-of-type(5) {
+  color: #c4302b;
+}
+footer h1 {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.footer_support div,
+.footer_support h4 {
+  margin-bottom: 10px;
+}
+.footer_support h4 {
+  opacity: 0.8;
 }
