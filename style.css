@@ -43,6 +43,7 @@ header div ul a:last-of-type {
   width: 100%;
   height: 600px;
   vertical-align: top;
+  margin-bottom: 40px;
 }
 .sd_wan_info {
   background: url(./images/image2.png) no-repeat;
@@ -62,16 +63,14 @@ header div ul a:last-of-type {
   right: 20px;
   bottom: 10px;
   padding: 10px 30px;
-  color: #000;
+  color: #2d135a;
   font-size: 16px;
+  background: #fff;
 }
 .sd_wan_info h1 {
   padding-top: 100px;
   padding-left: 100px;
   font-size: 40px;
-  /* position: absolute;
-  left: 40px;
-  bottom: 50px; */
   color: #fff;
 }
 .home_industries {
@@ -80,7 +79,20 @@ header div ul a:last-of-type {
 .home_industries h1 {
   font-size: 40px;
   margin: 20px 0;
+  font-weight: 400;
+  color: #2d135a;
+  position: relative;
 }
+.home_industries h1::after{
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
 .home_industries_block {
   max-width: 1024px;
   display: flex;
@@ -101,13 +113,21 @@ header div ul a:last-of-type {
   width: 300px;
   vertical-align: top;
 }
-.home_industries_block div p {
-  transition: opacity 1s;
+.home_industries_block div p:nth-of-type(1) {
+  color: #2d135a;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+.home_industries_block div p:nth-of-type(2) {
   background: #fff;
   color: #2d135a;
   padding: 20px;
-  font-weight: bold;
-  /* border: 1px solid #2d135a; */
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 200;
 }
 .home_industries_block div p:nth-of-type(2) {
   opacity: 0;
@@ -118,7 +138,7 @@ header div ul a:last-of-type {
   height: 100%;
 }
 .home_industries > button {
-  padding: 10px 20px;
+  padding: 10px 40px;
   font-size: 16px;
   background: #2d135a;
   color: #fff;
@@ -151,13 +171,14 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
+  color: #2d135a;
 }
 footer p {
-  color: #5f6368;
+  color: #421b85;
 }
 footer a:link,
 footer a:visited {
-  color: #5f6368;
+  color: #421b85;
 }
 .footer_stay_connected ion-icon {
   color: #2d135a;
@@ -177,7 +198,7 @@ footer a:visited {
   color: #c4302b;
 }
 footer h1 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   padding: 10px 0;
 }
@@ -231,6 +252,10 @@ footer h1 {
   font-size: 30px;
   margin-bottom: 10px;
 }
+.our_focus_svg_icons img {
+  width: 20px;
+  margin-right: 10px;
+}
 
 /* About******** */
 .about_banner {
@@ -262,18 +287,25 @@ footer h1 {
   color: #fff;
 }
 .about_our_story div h1 {
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 400;
+  margin-bottom: 20px;
+}
+.about_our_story div p {
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 1.5;
 }
 .know_us_more {
-  margin-top: 20px;
   padding: 10px;
+  margin-bottom: 50px;
 }
 .know_us_more > h1 {
-  margin: 20px 0;
+  margin: 40px 0;
   text-align: center;
   font-size: 40px;
   font-weight: 400;
+  color: #2d135a;
 }
 
 .know_us_more > div {
@@ -287,11 +319,21 @@ footer h1 {
   flex: 0 1 300px;
   background: #2d135a;
   color: #fff;
-  padding: 20px;
+  padding: 20px 30px 50px 30px;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 .know_us_more div div h1 {
   margin: 10px 0;
+  font-weight: 600;
+}
+.know_us_more div div img {
+  width: 30px;
+  margin-left: 20px;
+}
+.know_us_more div div p {
+  line-height: 1.5;
+  font-weight: 200;
 }
 
 /********* Contact */
@@ -329,7 +371,7 @@ footer h1 {
 .contact_main_sub1 div {
   flex: 0 1 350px;
   background: #2d135a;
-  padding: 20px;
+  padding: 40px;
   color: #fff;
 }
 .contact_form label {
