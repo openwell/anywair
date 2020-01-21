@@ -28,25 +28,36 @@
       <h1>CONTACT US</h1>
     </section>
 
-    <section class="contact_details">
+    <section class="contact_main">
       <h1>SAY HELLO</h1>
-      <div>
-        <form class="contact_form">
-          <input type="text" />
-          <input type="text" />
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button>Submit</button>
-        </form>
+      <div class="contact_main_sub1">
+        <div>
+          <form class="contact_form">
+            <label for="">Name </label>
+            <input type="text" />
+            <label for="">Email </label>
+            <input type="email" />
+            <label for="">Message </label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button>Submit</button>
+          </form>
+        </div>
+
         <div>
           <h1>Customer Feedback</h1>
           <p>
             Contact our Customer Service team to provide a comment or ask a
             question about your local store or our corporate headquarters
           </p>
-          <p>Call (1-800-ANYWAIRE)</p>
-          <p>Email the customer care</p>
+          <p><ion-icon name="call"></ion-icon> &nbsp; Call (1-800-ANYWAIRE)</p>
+          <p>
+            <ion-icon name="mail"></ion-icon> &nbsp; Email the customer care
+          </p>
         </div>
       </div>
+    </section>
+    <section>
+      <div id="map" style="width:100%;height:400px;"></div>
     </section>
 
     <footer>
@@ -114,4 +125,19 @@
       </div>
     </footer>
   </body>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5vFEjFpuO04h5PuFYfdBRO_JgdAjryAg&callback=myMap"
+  ></script>
+  <script>
+    function myMap() {
+      var uluru = { lat: 6.4470506, lng: 3.3626595};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 18,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({ position: uluru, map: map });
+    }
+  </script>
 </html>
