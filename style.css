@@ -256,6 +256,7 @@ footer {
   flex-wrap: wrap;
   padding: 10px;
   color: #2d135a;
+  border-top: 1px solid #2d135a;
 }
 footer p {
   color: #421b85;
