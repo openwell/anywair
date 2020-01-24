@@ -25,6 +25,19 @@
           <a href="contact.html">Contact</a>
         </ul>
       </div>
+      <div class="menu_icon">
+        <span>&#9776;</span>
+        <div class="menu_icon_nav">
+          <ul>
+            <a href="about.html">Who we are</a>
+            <a href="#">The Brand</a>
+            <a href="our_focus.html">Our Focus</a>
+            <a href="#">Solutions</a>
+            <a href="#">Support</a>
+            <a href="contact.html">Contact</a>
+          </ul>
+        </div>
+      </div>
     </header>
     <section class="contact_banner">
       <h1>CONTACT US</h1>
@@ -133,5 +146,9 @@
       });
       var marker = new google.maps.Marker({ position: uluru, map: map });
     }
+      document.querySelector('.menu_icon').addEventListener('click', () => {
+        document.querySelector('.menu_icon_nav ').classList.toggle("displayNone");
+      });
+
   </script>
 </html>
