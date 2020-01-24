@@ -444,7 +444,7 @@ footer h1 {
     hyphens: auto;
   }
   .about_banner h1 {
-    padding-top: 60px;
+    padding-top: 50px;
     font-size: 60px;
   }
   .about_our_story div {
@@ -469,11 +469,12 @@ footer h1 {
   text-align: center;
 }
 .contact_banner h1 {
-  padding-top: 50px;
+  padding-top: 100px;
   color: #fff;
   font-size: 100px;
   font-weight: 400;
 }
+
 .contact_main {
   max-width: 1024px;
   margin: 0 auto;

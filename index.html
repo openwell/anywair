@@ -9,19 +9,6 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </head>
   <body>
-    <section class="index_video">
-      <div class="index_video_box">
-        <iframe
-          id="embedvideo"
-          title="vimeo-player"
-          src="https://player.vimeo.com/video/379910145"
-          width="100%"
-          height="100%"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section>
     <header>
       <div class="logo">
         <a href="home.html">
@@ -31,67 +18,36 @@
       <div><button>Request a Demo</button></div>
     </header>
     <section class="hero_banner">
-      <!-- <img
-        class="play_button1"
-        src="./images/svgs/play-button-large.svg"
-        alt=""
-      /> -->
-      <iframe
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/IUzQ0c6ICHU?autoplay=1"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <!-- <div class="hero_banner_text">
-        <h1>SD WAN A Proven Business Accelerate</h1>
-      </div> -->
-      <div class="three_overlay_menu">
-        <div>
-          <img src="./images/Our_focus.png" alt="" />
-          <a href="our_focus.html">
-            <h1>Our Focus</h1>
-          </a>
-        </div>
-        <div>
-          <img src="./images/SD-WAN.png" alt="" />
-          <a href="sd-wan.html">
-            <h1>SD-WAN</h1>
-          </a>
-        </div>
-        <div>
-          <img src="./images/who_we_are.png" alt="" />
-          <a href="about.html">
-            <h1>Who we are</h1>
-          </a>
-        </div>
+      <div class="index_video_box">
+        <iframe
+          id="stopVideo"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/IUzQ0c6ICHU?autoplay=1"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-    </section>
 
-    <section class="hero_banner2">
-      <div class="three_overlay_menu2">
-        <div>
-          <img src="./images/Our_focus.png" alt="" />
-          <a href="our_focus.html">
-            <h1>Our Focus</h1>
-          </a>
-        </div>
-        <div>
-          <img src="./images/SD-WAN.png" alt="" />
-          <a href="sd-wan.html">
-            <h1>SD-WAN</h1>
-          </a>
-        </div>
-        <div>
-          <img src="./images/who_we_are.png" alt="" />
-          <a href="about.html">
-            <h1>Who we are</h1>
-          </a>
-        </div>
+    </section>
+    <div class="three_overlay_menu">
+      <div>
+        <a href="our_focus.html">
+          <h1>Our Focus</h1>
+        </a>
       </div>
-    </section>
-
+      <div>
+        <a href="sd-wan.html">
+          <h1>SD-WAN</h1>
+        </a>
+      </div>
+      <div>
+        <a href="about.html">
+          <h1>Who we are</h1>
+        </a>
+      </div>
+    </div>
     <footer>
       <ul>
         <a href="index.html">Anywair 2019</a>
@@ -101,15 +57,14 @@
       </ul>
     </footer>
     <script>
-      // document.onload = () => {
-      document.querySelector('.index_video').addEventListener('click', e => {
-        e.stopPropagation();
-        document.querySelector('.index_video').style.display = 'none';
-      });
-      document.querySelector('.play_button1').addEventListener('click', e => {
-        e.stopPropagation();
-        document.querySelector('.index_video').style.display = 'block';
-      });
+      // window.onresize = function(event) {
+      //   if (window.matchMedia('(max-width: 575.98px)').matches) {
+      //     document.querySelector('#stopVideo').src = ''
+
+      //   } else if (window.screen.availWidth > 575.99) {
+      //     document.querySelector('#stopVideo').src = 'https://www.youtube.com/embed/IUzQ0c6ICHU?autoplay=1'
+      //   }
+      // };
     </script>
   </body>
 </html>
