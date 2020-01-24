@@ -31,7 +31,7 @@ header div:nth-of-type(2) button {
   background: #2d135a;
   color: #fff;
 }
-.hero_banner {
+.hero_banner, .hero_banner2 {
   background: #2d135a;
   color: #fff;
   height: calc(100vh - 56.61px - 40px);
@@ -42,18 +42,21 @@ header div:nth-of-type(2) button {
   padding: 50px;
   width: 800px;
 }
-.three_overlay_menu {
+.three_overlay_menu,
+.three_overlay_menu2 {
   display: flex;
   justify-content: start;
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.three_overlay_menu div {
+.three_overlay_menu div,
+.three_overlay_menu2 div {
   flex: 1;
   position: relative;
 }
-.three_overlay_menu div h1 {
+.three_overlay_menu div h1,
+.three_overlay_menu2 div h1 {
   position: absolute;
   left: 0;
   bottom: 10px;
@@ -61,14 +64,57 @@ header div:nth-of-type(2) button {
   padding: 10px 10px;
   text-align: center;
   width: 100%;
+  color: #fff;
 }
-.three_overlay_menu div img {
+.three_overlay_menu div img,
+.three_overlay_menu2 div img {
   max-width: 100%;
   /* height: 300px; */
+}
+.hero_banner2 {
+  display: none;
 }
 footer {
   padding: 10px;
 }
 footer ul a {
   padding: 10px;
+}
+@media (max-width: 575.98px) {
+  .hero_banner {
+    height: 100%;
+  }
+  .three_overlay_menu {
+    display: none;
+  }
+  .hero_banner2 {
+    display: block;
+    position: relative;
+  }
+  .hero_banner_text h1 {
+    font-size: 40px;
+    padding: 30px 20px;
+    width: 100%;
+  }
+  .three_overlay_menu2 div img {
+    width: 100%;
+    height: 200px;
+  }
+  .three_overlay_menu2 {
+    flex-direction: column;
+  }
+  footer {
+    padding: 5px;
+  }
+  /* footer ul a { */
+  /* padding: 5px; */
+  /* font-size: 12px; */
+  /* } */
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero_banner_text h1 {
+    font-size: 60px;
+    padding: 50px;
+    width: 100%;
+  }
 }
