@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#464A4F" stop-opacity=".5"/>
+            <stop offset="100%" stop-color="#242629" stop-opacity=".8"/>
+        </linearGradient>
+        <path id="b" d="M0 40C0 17.95 17.95 0 40 0s40 17.95 40 40-17.95 40-40 40S0 62.05 0 40z"/>
+        <filter id="a" width="157.5%" height="157.5%" x="-28.8%" y="-20%" filterUnits="objectBoundingBox">
+            <feOffset dy="7" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="6.5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <path fill="url(#c)" stroke="#FFF" stroke-linejoin="square" stroke-width="2.759" d="M1.38 40c0 21.288 17.332 38.62 38.62 38.62 21.288 0 38.62-17.332 38.62-38.62C78.62 18.712 61.289 1.38 40 1.38 18.712 1.38 1.38 18.711 1.38 40z"/>
+        </g>
+        <path fill="#FFF" d="M31.724 57.931L56.552 40.69 31.724 23.448z"/>
+    </g>
+</svg>

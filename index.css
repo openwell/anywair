@@ -16,6 +16,7 @@ button {
 a:visited,
 a:link {
   text-decoration: none;
+  color: #2d135a;
 }
 header {
   display: flex;
@@ -31,7 +32,67 @@ header div:nth-of-type(2) button {
   background: #2d135a;
   color: #fff;
 }
-.hero_banner, .hero_banner2 {
+.play_button1 {
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  top: 40%;
+  margin-top: -40px;
+  z-index: 10;
+  cursor: pointer;
+}
+.index_video {
+  display: none;
+  position: absolute;
+  background: linear-gradient(rgba(10, 10, 10, 0.87), rgba(10, 10, 10, 0.856));
+  height: 100vh;
+  width: 100vw;
+  padding: 40px;
+  z-index: 20;
+}
+.index_video_box {
+  max-width: 900px;
+  height: 250px;
+  margin: auto;
+}
+.index_video_box {
+  margin: 10vh auto;
+}
+@media (max-width: 575.98px) {
+  .index_video_box {
+    height: 200px;
+  }
+  .index_video_box {
+    margin: 20vh auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .index_video_box {
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .index_video_box {
+    width: 700px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .index_video_box {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .index_video_box {
+    height: 500px;
+  }
+}
+.hero_banner,
+.hero_banner2 {
   background: #2d135a;
   color: #fff;
   height: calc(100vh - 56.61px - 40px);
@@ -39,8 +100,8 @@ header div:nth-of-type(2) button {
 }
 .hero_banner_text h1 {
   font-size: 60px;
-  padding: 50px;
-  width: 800px;
+  padding: 50px 0 50px 50px;
+  max-width: 800px;
 }
 .three_overlay_menu,
 .three_overlay_menu2 {
@@ -78,11 +139,15 @@ footer {
   padding: 10px;
 }
 footer ul a {
-  padding: 10px;
+  padding: 10px 10px 10px 0;
 }
 @media (max-width: 575.98px) {
+  .play_button1 {
+    top: 90%;
+  }
   .hero_banner {
-    height: 100%;
+    /* height: 100%; */
+    height: 50vh;
   }
   .three_overlay_menu {
     display: none;
@@ -93,7 +158,7 @@ footer ul a {
   }
   .hero_banner_text h1 {
     font-size: 40px;
-    padding: 30px 20px;
+    padding: 80px 20px;
     width: 100%;
   }
   .three_overlay_menu2 div img {
@@ -106,15 +171,10 @@ footer ul a {
   footer {
     padding: 5px;
   }
-  /* footer ul a { */
-  /* padding: 5px; */
-  /* font-size: 12px; */
-  /* } */
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .hero_banner_text h1 {
     font-size: 60px;
-    padding: 50px;
     width: 100%;
   }
 }
