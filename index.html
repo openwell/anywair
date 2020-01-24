@@ -9,6 +9,19 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </head>
   <body>
+    <section class="index_video">
+      <div class="index_video_box">
+        <iframe
+          id="embedvideo"
+          title="vimeo-player"
+          src="https://player.vimeo.com/video/379910145"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
     <header>
       <div class="logo">
         <a href="home.html">
@@ -18,6 +31,11 @@
       <div><button>Request a Demo</button></div>
     </header>
     <section class="hero_banner">
+      <img
+        class="play_button1"
+        src="./images/svgs/play-button-large.svg"
+        alt=""
+      />
       <div class="hero_banner_text">
         <h1>SD WAN A Proven Business Accelerate</h1>
       </div>
@@ -36,30 +54,48 @@
         </div>
       </div>
     </section>
+
     <section class="hero_banner2">
       <div class="three_overlay_menu2">
         <div>
           <img src="./images/Our_focus.png" alt="" />
-          <h1>Our Focus</h1>
+          <a href="our_focus.html">
+            <h1>Our Focus</h1>
+          </a>
         </div>
         <div>
           <img src="./images/SD-WAN.png" alt="" />
-          <h1>SD-WAN</h1>
+          <a href="sd-wan.html">
+            <h1>SD-WAN</h1>
+          </a>
         </div>
         <div>
           <img src="./images/who_we_are.png" alt="" />
-          <h1>Who we are</h1>
+          <a href="about.html">
+            <h1>Who we are</h1>
+          </a>
         </div>
       </div>
     </section>
 
     <footer>
       <ul>
-        <a href="">Anywair 2019</a>
+        <a href="index.html">Anywair 2019</a>
         <a href="contact.html">Contact</a>
-        <a href="">Support</a>
-        <a href="">Privacy Policy</a>
+        <a href="#">Support</a>
+        <a href="#">Privacy Policy</a>
       </ul>
     </footer>
+    <script>
+      // document.onload = () => {
+      document.querySelector('.index_video').addEventListener('click', e => {
+        e.stopPropagation();
+        document.querySelector('.index_video').style.display = 'none';
+      });
+      document.querySelector('.play_button1').addEventListener('click', e => {
+        e.stopPropagation();
+        document.querySelector('.index_video').style.display = 'block';
+      });
+    </script>
   </body>
 </html>
