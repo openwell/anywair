@@ -65,11 +65,7 @@ header .logo img {
 header div ul {
   padding: 0.6rem;
 }
-@media (max-width: 575.98px) {
-  header div ul {
-    display: none;
-  }
-}
+
 header div ul a {
   padding: 0.6rem;
   font-size: 1rem;
@@ -78,6 +74,30 @@ header div ul a {
 header div ul a:last-of-type {
   color: #fff;
   background: #2d135a;
+}
+.menu_icon {
+  display: none;
+  margin-right: 10px;
+  font-size: 30px;
+  color: #2d135a;
+  /* position: relative; */
+}
+.menu_icon_nav {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  color: black;
+  font-size: 20px;
+  z-index: 60;
+}
+
+@media (max-width: 575.98px) {
+  header div ul {
+    display: none;
+  }
+  .menu_icon {
+    display: block;
+  }
 }
 .hero_banner img {
   width: 100%;
