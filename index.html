@@ -29,7 +29,6 @@
           allowfullscreen
         ></iframe>
       </div>
-
     </section>
     <div class="three_overlay_menu">
       <div>
@@ -50,21 +49,21 @@
     </div>
     <footer>
       <ul>
-        <a href="index.html">Anywair 2019</a>
+        <a href="index.html">Teleweb 2019</a>
         <a href="contact.html">Contact</a>
         <a href="#">Support</a>
         <a href="#">Privacy Policy</a>
       </ul>
     </footer>
     <script>
-      // window.onresize = function(event) {
-      //   if (window.matchMedia('(max-width: 575.98px)').matches) {
-      //     document.querySelector('#stopVideo').src = ''
+      window.onresize = function(event) {
+        if (window.matchMedia('(max-width: 575.98px)').matches) {
+          document.querySelector('#stopVideo').src = ''
 
-      //   } else if (window.screen.availWidth > 575.99) {
-      //     document.querySelector('#stopVideo').src = 'https://www.youtube.com/embed/IUzQ0c6ICHU?autoplay=1'
-      //   }
-      // };
+        } else if (window.screen.availWidth > 575.99) {
+          document.querySelector('#stopVideo').src = 'https://www.youtube.com/embed/IUzQ0c6ICHU?autoplay=1'
+        }
+      };
     </script>
   </body>
 </html>
