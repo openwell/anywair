@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -40,14 +45,22 @@
       </div>
     </header>
     <section class="hero_banner">
-      <img src="./images/boost productivity.jpg" alt="" />
+      <div class="slide_1">
+        <h1>Boost Productivity</h1>
+        <img src="./images/boost productivity.jpg" alt="" />
+      </div>
+      <div class="slide_2">
+        <h1>Manage and Take Control <br> of your Business</h1>
+        <img src="./images/take_control.jpg" alt="" />
+      </div>
     </section>
     <section class="sd_wan_info">
       <!-- <img src="./images/image2.png" alt="" /> -->
       <h1>
         SD-WAN <br />
-        <span>Revolutionize your Business</span>
+        <span>Revolutionize your Business</span> 
       </h1>
+      <p>What is SD-WAN ?</p>
       <a href="sd-wan.html">
         <button>Learn More</button>
       </a>
@@ -59,7 +72,7 @@
 
       <div class="home_industries_block">
         <div>
-          <img src="./images/our_focus1.png" alt="" />
+          <img src="./images/home_sme.jpg" alt="" />
           <p>SMEs</p>
           <p>
             Spectra Managed SD-WAN helps simplify your WAN environment by
@@ -70,7 +83,7 @@
           </p>
         </div>
         <div>
-          <img src="./images/our_focus2.png" alt="" />
+          <img src="./images/home_finance.jpg" alt="" />
           <p>Financial Institution</p>
           <p>
             Spectra Managed SD-WAN helps simplify your WAN environment by
@@ -81,7 +94,7 @@
           </p>
         </div>
         <div>
-          <img src="./images/our_focus3.png" alt="" />
+          <img src="./images/home_hotel.jpg" alt="" />
           <p>Hotel/Motels</p>
           <p>
             Spectra Managed SD-WAN helps simplify your WAN environment by
@@ -92,7 +105,7 @@
           </p>
         </div>
         <div>
-          <img src="./images/our_focus4.png" alt="" />
+          <img src="./images/home_health.jpg" alt="" />
           <p>Healthcare</p>
           <p>
             Spectra Managed SD-WAN helps simplify your WAN environment by
@@ -103,7 +116,7 @@
           </p>
         </div>
         <div>
-          <img src="./images/our_focus5.png" alt="" />
+          <img src="./images/home_estates.jpg" alt="" />
           <p>Estates</p>
           <p>
             Spectra Managed SD-WAN helps simplify your WAN environment by
@@ -114,7 +127,7 @@
           </p>
         </div>
         <div>
-          <img src="./images/our_focus6.png" alt="" />
+          <img src="./images/home_malls.jpg" alt="" />
           <p>Malls</p>
           <p>
             Spectra Managed SD-WAN helps simplify your WAN environment by
@@ -186,9 +199,24 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script>
+      $('.hero_banner').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: false,
+        prevArrow: false,
+        nextArrow: false
+      });
       document.querySelector('.menu_icon').addEventListener('click', () => {
-        document.querySelector('.menu_icon_nav ').classList.toggle("displayNone");
+        document
+          .querySelector('.menu_icon_nav ')
+          .classList.toggle('displayNone');
       });
     </script>
   </body>
