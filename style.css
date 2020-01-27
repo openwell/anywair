@@ -71,6 +71,20 @@ header div ul a {
   font-size: 1rem;
   color: #2d135a;
 }
+.active_nav{
+  position: relative;
+}
+.active_nav:before {
+  position: absolute;
+  border-bottom: 2px solid #2d135a;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+  right: 50%;
+  overflow: hidden;
+  transition: left 0.4s, right 0.4s;
+  content: '';
+}
 header div ul a:last-of-type {
   color: #fff;
   background: #2d135a;
@@ -119,7 +133,7 @@ header div ul a:last-of-type {
 
 .hero_banner img {
   width: 100%;
-  height: 700px;
+  height: 85vh;
   vertical-align: top;
   margin-bottom: 40px;
 }
@@ -130,8 +144,8 @@ header div ul a:last-of-type {
 .slide_1 h1 {
   position: absolute;
   top: 30%;
-  left: 35%;
-  font-size: 60px;
+  left: 30%;
+  font-size: 80px;
   color: #2d135a;
 }
 .slide_2 h1 {
@@ -176,6 +190,12 @@ header div ul a:last-of-type {
   padding-top: 50px;
   padding-left: 100px;
   font-size: 30px;
+}
+.sd_wan_info a:link,
+.sd_wan_info a:visited {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 @media (max-width: 575.98px) {
   .sd_wan_info h1 {
@@ -250,6 +270,13 @@ header div ul a:last-of-type {
   height: 100%;
 }
 .home_industries > button {
+  padding: 10px 40px;
+  font-size: 16px;
+  background: #2d135a;
+  color: #fff;
+}
+.home_industries > button a:link,
+.home_industries > button a:visited {
   padding: 10px 40px;
   font-size: 16px;
   background: #2d135a;
@@ -331,7 +358,7 @@ footer h1 {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 300px;
+  height: 400px;
   text-align: center;
 }
 .our_focus_banner h1 {
