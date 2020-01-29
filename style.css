@@ -731,24 +731,24 @@ footer h1 {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 50vh;
+  height: 400px;
   text-align: right;
   color: #2d135a;
 }
 .sd_wan_banner h1 {
-  padding-top: 150px;
-  padding-right: 220px;
+  padding-top: 15%;
+  padding-right: 16%;
   font-size: 70px;
   font-weight: 400;
   line-height: 1;
 }
 .sd_wan_banner p {
-  padding-right: 200px;
+  padding-right: 16%;
   font-weight: 400;
 }
 .sd_wan_section_2 {
   width: 100%;
-  height: 100px;
+  height: 50px;
   background: #705cb1;
 }
 .sd_wan_section_3 {
@@ -807,16 +807,7 @@ footer h1 {
 .sd_wan_section_3_subSec2 * {
   flex: 0 1 50%;
 }
-@media (max-width: 575.98px) {
-  .sd_wan_section_3_4tabs div {
-    flex: 0 1 100%;
-  }
-}
-@media (max-width: 575.98px) {
-  .sd_wan_section_3_subSec2 * {
-    flex: 0 1 100%;
-  }
-}
+
 .sd_wan_section_3_subSec2 div {
   max-width: 400px;
 }
@@ -866,13 +857,42 @@ footer h1 {
   margin: 20px 0;
   background: #fff;
 }
+@media only screen and (max-width: 767.98px) {
+  .sd_wan_banner h1 {
+    padding-top: 20%;
+    padding-right: 10%;
+  }
+  .sd_wan_banner p {
+    padding-right: 10%;
+  }
+}
+
 @media (max-width: 575.98px) {
+  .sd_wan_banner {
+    background-position: left;
+    height: 300px;
+  }
+  .sd_wan_banner h1 {
+    padding-top: 30%;
+    padding-right: 10%;
+    font-size: 60px;
+  }
+  .sd_wan_banner p {
+    padding-right: 10%;
+    font-size: 12px;
+  }
+  .sd_wan_section_3_4tabs div {
+    flex: 0 1 100%;
+  }
+  .sd_wan_section_3_subSec2 * {
+    flex: 0 1 100%;
+  }
   .sd_wan_section_3 h1 {
     font-size: 30px;
   }
   .sd_wan_section_3_4tabs h1 {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
   }
   .sd_wan_section_4 > div > div {
     flex: 0 1 100%;
@@ -890,7 +910,329 @@ footer h1 {
     font-size: 30px;
   }
 }
+/********* IOT********/
+/************************/
+.iot_banner {
+  background: url(./images/iot_banner.png) no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  color: #fff;
+}
+.iot_banner h1 {
+  padding-top: 10%;
+  font-size: 60px;
+}
+.iot_section2,
+.iot_section3 div,
+.iot_section4,
+.iot_section5,
+.iot_section6,
+.iot_section7 {
+  max-width: 1024px;
+  margin: auto;
+}
+.iot_section2 {
+  padding: 40px 10px;
+  color: #2d135a;
+  line-height: 2;
+}
+.iot_section2 h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+.iot_section2 p {
+  font-weight: 200;
+}
+.iot_section3 {
+  background: linear-gradient(rgba(4, 0, 79, 0.603), rgba(4, 0, 79, 0.603)),
+    url(./images/iot_banner2.png) no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+  line-height: 2;
+}
+.iot_section3 img {
+  width: 100px;
+}
+.iot_section3 h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.iot_section3 p {
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 1;
+}
+.iot_section4 {
+  padding: 40px 10px;
+  color: #2d135a;
+  line-height: 2;
+}
+.iot_section4 h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+.iot_section4 p {
+  font-weight: 200;
+}
+.iot_section5 {
+  padding-top: 40px;
+  background: #2d135a;
+}
+.iot_section5 > div {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.iot_section5 > div div {
+  width: 200px;
+  height: 150px;
+  background: #dfd1f2;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+.iot_section5 div img {
+  width: 30px;
+  margin-bottom: 10px;
+}
+.iot_section6 {
+  padding: 40px 10px;
+  color: #2d135a;
+  line-height: 2;
+}
+.iot_section6 h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+.iot_section6 p {
+  font-weight: 200;
+}
 
+.iot_section7 {
+  background: #2d135a;
+  padding: 40px;
+}
+.iot_section7 form input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.iot_section7 form button {
+  padding: 10px 20px;
+  color: #fff;
+  background: #2d135a;
+  border: 1px solid #fff;
+}
+/********* AI********/
+/************************/
+.ai_banner {
+  background: url(./images/ai_banner.png) no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  color: #fff;
+}
+.ai_banner h1 {
+  padding-top: 10%;
+  font-size: 60px;
+}
+.ai_section2 {
+  max-width: 1024px;
+  margin: auto;
+  line-height: 1.5;
+  padding: 40px 10px;
+  color: #2d135a;
+}
+.ai_section3 {
+  max-width: 1024px;
+  margin: auto;
+  text-align: center;
+  color: #2d135a;
+}
+.ai_section3 > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ai_section3 > div div {
+  width: 300px;
+}
+.ai_section3 > div div img {
+  width: 50px;
+}
+.ai_section3 > div div div:nth-of-type(2) p {
+  text-align: justify;
+}
+.ai_section4 {
+  max-width: 1024px;
+  margin: auto;
+  color: #2d135a;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 10px;
+}
+.ai_section4 > div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.ai_section4 div > div {
+  max-width: 50%;
+  margin: 40px 0;
+}
+.ai_section4 div img {
+  max-width: 300px;
+  height: 200px;
+}
+/* .ai_section4 div > div:first-of-type{
+  text-align: center;
+} */
+
+
+/********* Office in a box********/
+/************************/
+.office_box_banner {
+  height: 400px;
+  text-align: center;
+  background-color: bisque;
+}
+.office_box_banner h1 {
+  padding-top: 10%;
+  font-size: 60px;
+}
+.office_box_section2 {
+  max-width: 1024px;
+  margin: 40px auto;
+  color: #2d135a;
+  line-height: 1.5;
+}
+
+.office_box_section2 > div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.office_box_section2 > div {
+  margin-bottom: 40px;
+}
+.office_box_section2 > div:nth-of-type(1) > div {
+  width: 50%;
+}
+.office_box_section2 > div:nth-of-type(1) div:nth-of-type(1) {
+  padding-right: 20px;
+}
+.office_box_section2 > div:nth-of-type(1) div:nth-of-type(1) p {
+  margin-top: 20px;
+  font-weight: 200;
+}
+.office_box_section2 > div:nth-of-type(1) div img {
+  max-width: 400px;
+}
+.office_box_section2 > div:nth-of-type(2) p {
+  margin-top: 20px;
+  font-weight: 200;
+  word-spacing: 10px;
+  /* max-width: 60%; */
+}
+.office_box_section2 > div:nth-of-type(3) img {
+  max-width: 100%;
+}
+.office_box_section3 {
+  max-width: 1024px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #2d135a;
+}
+.office_box_section3 div {
+  width: 300px;
+  padding: 20px;
+  background-color: #c4c4c485;
+  margin-bottom: 20px;
+}
+.office_box_section3 div img {
+  width: 20px;
+  margin-right: 10px;
+  color: #2d135a;
+}
+.office_box_section3 div h1 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.office_box_section3 div p {
+  font-weight: 200;
+}
+.office_box_section4 {
+  max-width: 1024px;
+  margin: 40px auto;
+  color: #2d135a;
+}
+.office_box_section4 li {
+  list-style: circle;
+  font-weight: 200;
+}
+.office_box_section4 > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.office_box_section4 > div:nth-of-type(2) div:not(:nth-of-type(3)) {
+  border-right: 1px solid #2d135a;
+}
+.office_box_section4 > div:nth-of-type(2) div {
+  padding: 20px 40px 20px 0;
+}
+.office_box_section4 > div:nth-of-type(2) div p {
+  font-weight: 200;
+}
+.office_box_section5 {
+  color: #2d135a;
+  max-width: 768px;
+  margin: 40px auto;
+  text-align: center;
+}
+.office_box_section5 span {
+  font-weight: 200;
+}
+.office_box_section6 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 40px auto;
+  background-color: rgb(222, 222, 223);
+  padding: 40px;
+}
+.office_box_section6 div {
+  background-color: bisque;
+  padding: 80px;
+}
+
+.office_box_section7 {
+  color: #fff;
+  background-color: #2d135a;
+  max-width: 1024px;
+  margin: 40px auto;
+  padding: 80px 4px;
+  text-align: center;
+}
+.office_box_section7 p {
+  font-weight: 200;
+  font-size: 20px;
+}
+.office_box_section7 h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
 /* @media (max-width: 575.98px) {
 }
 
