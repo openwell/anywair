@@ -29,8 +29,12 @@ header {
   justify-content: space-between;
   padding: 5px;
 }
-header .logo img {
-  width: 100px;
+.logo {
+  padding: 0px 40px; 
+}
+header .logo a {
+  color: #2d135a;
+  font-size: 30px;
 }
 header .header_nav > ul {
   display: flex;
@@ -102,11 +106,11 @@ header div ul a {
   z-index: 60;
   background: #fff;
   width: 100%;
-  opacity: 0;
+  display: none;
   transition: opacity 1s ease;
 }
 .displayNone {
-  opacity: 1;
+  display: block;
 }
 .menu_icon_nav ul {
   background: #fff;
@@ -211,50 +215,93 @@ header div ul a {
 
 @media only screen and (max-width: 1199.98px) {
   .slide_1 h1 {
-    top: 30%;
+    top: 10%;
     left: 20%;
     font-size: 80px;
   }
   .slide_2 h1 {
     top: 30%;
-    left: 20%;
+    left: 10%;
     font-size: 60px;
+  }
+  .slide_3 h1 {
+    top: 30%;
+    left: 10%;
+    font-size: 60px;
+  }
+  .slide_4 h1:first-of-type {
+    top: 35%;
+    left: 4%;
+    font-size: 50px;
+  }
+  .slide_4 h1:last-of-type {
+    top: 35%;
+    right: 1%;
+    font-size: 50px;
   }
 }
 @media only screen and (max-width: 991.98px) {
   .slide_1 h1 {
-    top: 30%;
+    top: 20%;
     left: 27%;
     font-size: 60px;
   }
   .slide_2 h1 {
     top: 30%;
-    left: 22%;
-    font-size: 50px;
+    left: 10%;
+    font-size: 60px;
   }
 }
 @media only screen and (max-width: 916px) {
   .slide_1 h1 {
-    top: 30%;
+    top: 20%;
     left: 22%;
     font-size: 60px;
   }
   .slide_2 h1 {
     top: 30%;
-    left: 20%;
-    font-size: 50px;
+    left: 10%;
+    font-size: 60px;
   }
 }
 @media only screen and (max-width: 767.98px) {
   .slide_1 h1 {
-    top: 30%;
+    top: 10%;
     left: 20%;
     font-size: 50px;
   }
   .slide_2 h1 {
     top: 30%;
-    left: 15%;
+    left: 10%;
     font-size: 50px;
+  }
+  .slide_3 h1 {
+    top: 30%;
+    left: 5%;
+    font-size: 50px;
+  }
+  .slide_4 h1:first-of-type {
+    top: 35%;
+    left: 4%;
+    font-size: 40px;
+  }
+  .slide_4 h1:last-of-type {
+    top: 35%;
+    right: 1%;
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .slide_2 h1 {
+    top: 30%;
+    left: 5%;
+    font-size: 50px;
+  }
+  .slide_4 h1:first-of-type {
+    font-size: 30px;
+  }
+  .slide_4 h1:last-of-type {
+    font-size: 30px;
   }
 }
 @media only screen and (max-width: 705px) {
@@ -263,18 +310,16 @@ header div ul a {
     left: 10%;
     font-size: 50px;
   }
-}
-@media only screen and (max-width: 720px) {
-  .slide_2 h1 {
+  .slide_3 h1 {
     top: 30%;
-    left: 15%;
+    left: 5%;
     font-size: 40px;
   }
 }
+
 @media only screen and (max-width: 575.98px) {
   .slide_1 h1 {
-    top: 30%;
-    left: 15%;
+    left: 10%;
     font-size: 50px;
   }
   .slide_2 h1 {
@@ -290,33 +335,47 @@ header div ul a {
     font-size: 40px;
   }
   .slide_2 h1 {
-    top: 30%;
-    left: 10%;
+    left: 5%;
     font-size: 30px;
+  }
+  .slide_3 h1 {
+    top: 30%;
+    left: 5%;
+    font-size: 30px;
+  }
+  .slide_4 h1:first-of-type {
+    top: 40%;
+    left: 4%;
+    font-size: 20px;
+  }
+  .slide_4 h1:last-of-type {
+    top: 40%;
+    right: 1%;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 375px) {
   .slide_1 h1 {
-    top: 20%;
-    left: 15%;
+    top: 10%;
     font-size: 30px;
   }
   .slide_2 h1 {
-    top: 30%;
-    left: 15%;
     font-size: 25px;
   }
+  .slide_3 h1 {
+    font-size: 20px;
+  }
+  .slide_4 h1:first-of-type {
+    font-size: 16px;
+  }
+  .slide_4 h1:last-of-type {
+    font-size: 16px;
+  }
+  
 }
 @media only screen and (max-width: 320px) {
   .slide_1 h1 {
-    top: 20%;
-    left: 15%;
     font-size: 25px;
-  }
-  .slide_2 h1 {
-    top: 30%;
-    left: 15%;
-    font-size: 20px;
   }
 }
 
@@ -478,6 +537,9 @@ footer p {
 footer a:link,
 footer a:visited {
   color: #421b85;
+}
+footer img {
+  width: 150px;
 }
 .footer_stay_connected ion-icon {
   color: #2d135a;
@@ -1258,7 +1320,7 @@ footer h1 {
 .office_box_section2 {
   max-width: 1024px;
   margin: 40px auto;
-  color: #450B19;
+  color: #450b19;
   line-height: 1.5;
 }
 
@@ -1309,21 +1371,21 @@ footer h1 {
 .office_box_section3 div img {
   width: 20px;
   margin-right: 10px;
-  color: #450B19;
+  color: #450b19;
 }
 .office_box_section3 div h1 {
   font-size: 16px;
   margin-bottom: 10px;
-  color: #450B19;
+  color: #450b19;
 }
 .office_box_section3 div p {
   font-weight: 200;
-  color: #450B19;
+  color: #450b19;
 }
 .office_box_section4 {
   max-width: 1024px;
   margin: 40px auto;
-  color: #450B19;
+  color: #450b19;
 }
 .office_box_section4 li {
   list-style: circle;
@@ -1335,7 +1397,7 @@ footer h1 {
   flex-wrap: wrap;
 }
 .office_box_section4 > div:nth-of-type(2) div:not(:nth-of-type(3)) {
-  border-right: 1px solid #450B19;
+  border-right: 1px solid #450b19;
 }
 .office_box_section4 > div:nth-of-type(2) div {
   padding: 20px 40px 20px 0;
@@ -1344,12 +1406,12 @@ footer h1 {
   font-weight: 200;
 }
 .office_box_section5 {
-  color: #450B19;
+  color: #450b19;
   max-width: 768px;
   margin: 40px auto;
   text-align: center;
 }
-.office_box_section5 img{
+.office_box_section5 img {
   width: 70px;
 }
 .office_box_section5 span {
@@ -1361,7 +1423,7 @@ footer h1 {
   flex-wrap: wrap;
   max-width: 1024px;
   margin: 40px auto;
-  background-color: #450B19;;
+  background-color: #450b19;
   padding: 40px;
 }
 .office_box_section6 div {
@@ -1371,7 +1433,7 @@ footer h1 {
 
 .office_box_section7 {
   color: #fff;
-  background-color: #450B19;
+  background-color: #450b19;
   max-width: 1024px;
   margin: 40px auto;
   padding: 80px 4px;
