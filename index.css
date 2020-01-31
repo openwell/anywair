@@ -19,7 +19,7 @@ a:link {
   text-decoration: none;
   color: #2d135a;
 }
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   padding: 5px;
@@ -32,7 +32,7 @@ header div:nth-of-type(2) button {
   font-size: 16px;
   background: #2d135a;
   color: #fff;
-}
+} */
 .play_button1 {
   position: absolute;
   left: 50%;
@@ -69,17 +69,17 @@ header div:nth-of-type(2) button {
   overflow: hidden;
 }
 
-.three_overlay_menu a:nth-of-type(1) {
+.three_overlay_menu > a:nth-of-type(1) {
   background: url(./images/index_focus.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
-.three_overlay_menu a:nth-of-type(2) {
+.three_overlay_menu > a:nth-of-type(2) {
   background: url(./images/index_about.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
-.three_overlay_menu a:nth-of-type(3) {
+.three_overlay_menu > a:nth-of-type(3) {
   background: url(./images/index_sdwan.jpg) no-repeat;
   background-position: center;
   background-size: cover;
@@ -105,6 +105,8 @@ header div:nth-of-type(2) button {
   padding: 10px;
   font-size: 16px;
   background: #2d135a;
+}
+.index_req_button a{
   color: #fff;
 }
 

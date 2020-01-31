@@ -144,8 +144,8 @@ header div ul a {
 }
 .slick-dots button {
   display: block;
-  width: .5rem;
-  height: .5rem;
+  width: 0.5rem;
+  height: 0.5rem;
   padding: 0;
   border: none;
   border-radius: 100%;
@@ -181,20 +181,29 @@ header div ul a {
   color: #fff;
 }
 .slide_3 h1 {
-  text-align: center;
-  position: absolute;
-  top: 30%;
-  left: 25%;
-  font-size: 80px;
-  font-weight: 400;
-  color: #fff;
-}
-.slide_4 h1 {
   text-align: left;
   position: absolute;
   top: 30%;
   left: 8%;
   line-height: 1;
+  font-size: 80px;
+  font-weight: 400;
+  color: #fff;
+}
+.slide_4 h1:first-of-type {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 4%;
+  font-size: 80px;
+  font-weight: 400;
+  color: #fff;
+}
+.slide_4 h1:last-of-type {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  right: 1%;
   font-size: 80px;
   font-weight: 400;
   color: #fff;
@@ -321,7 +330,7 @@ header div ul a {
   color: #fff;
 }
 
-.sd_wan_info button {
+/* .sd_wan_info button {
   position: absolute;
   right: 20px;
   bottom: 10px;
@@ -329,7 +338,7 @@ header div ul a {
   color: #2d135a;
   font-size: 16px;
   background: #fff;
-}
+} */
 .sd_wan_info h1 {
   padding-top: 150px;
   padding-left: 100px;
@@ -445,6 +454,10 @@ header div ul a {
   font-weight: 200;
   text-align: center;
   padding-top: 100px;
+}
+.home_request_a_demo_banner a:link,
+.home_request_a_demo_banner a:visited {
+  color: #fff;
 }
 
 footer {
@@ -1245,7 +1258,7 @@ footer h1 {
 .office_box_section2 {
   max-width: 1024px;
   margin: 40px auto;
-  color: #2d135a;
+  color: #450B19;
   line-height: 1.5;
 }
 
@@ -1296,19 +1309,21 @@ footer h1 {
 .office_box_section3 div img {
   width: 20px;
   margin-right: 10px;
-  color: #2d135a;
+  color: #450B19;
 }
 .office_box_section3 div h1 {
   font-size: 16px;
   margin-bottom: 10px;
+  color: #450B19;
 }
 .office_box_section3 div p {
   font-weight: 200;
+  color: #450B19;
 }
 .office_box_section4 {
   max-width: 1024px;
   margin: 40px auto;
-  color: #2d135a;
+  color: #450B19;
 }
 .office_box_section4 li {
   list-style: circle;
@@ -1320,7 +1335,7 @@ footer h1 {
   flex-wrap: wrap;
 }
 .office_box_section4 > div:nth-of-type(2) div:not(:nth-of-type(3)) {
-  border-right: 1px solid #2d135a;
+  border-right: 1px solid #450B19;
 }
 .office_box_section4 > div:nth-of-type(2) div {
   padding: 20px 40px 20px 0;
@@ -1329,10 +1344,13 @@ footer h1 {
   font-weight: 200;
 }
 .office_box_section5 {
-  color: #2d135a;
+  color: #450B19;
   max-width: 768px;
   margin: 40px auto;
   text-align: center;
+}
+.office_box_section5 img{
+  width: 70px;
 }
 .office_box_section5 span {
   font-weight: 200;
@@ -1343,17 +1361,17 @@ footer h1 {
   flex-wrap: wrap;
   max-width: 1024px;
   margin: 40px auto;
-  background-color: rgb(222, 222, 223);
+  background-color: #450B19;;
   padding: 40px;
 }
 .office_box_section6 div {
-  background-color: bisque;
+  background-color: #fff;
   padding: 80px;
 }
 
 .office_box_section7 {
   color: #fff;
-  background-color: #2d135a;
+  background-color: #450B19;
   max-width: 1024px;
   margin: 40px auto;
   padding: 80px 4px;
