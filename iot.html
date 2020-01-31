@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>IOT</title>
+    <title>IoT</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,12 +17,12 @@
       </div>
       <div class="header_nav">
         <ul>
-          <li><a  href="about.html">Who we are</a></li>
+          <li><a href="about.html">Who we are</a></li>
           <li class="header_nav_brand">
             <a class="active_nav" href="#">The Brand</a>
             <ul class="header_nav_brand_layer1">
-              <a href="ai.html">AI</a>
               <a href="iot.html">IoT</a>
+              <a href="ai.html">AI</a>
             </ul>
           </li>
           <li><a href="our_focus.html">Our Focus</a></li>
@@ -86,8 +87,8 @@
       </div>
     </section>
     <section class="iot_section5">
-      <h1></h1>
-      <div>
+      <h1>Benefits of Being IoT Ready</h1>
+      <div class="iot_section5_sub1">
         <div>
           <img src="./images/svgs/iot_5.svg" alt="" />
           <p>Positioning as an innovative company</p>
@@ -104,6 +105,8 @@
           <img src="./images/svgs/iot_2.svg" alt="" />
           <p>New services upsell for current customer base</p>
         </div>
+      </div>
+      <div class="iot_section5_sub2">
         <div>
           <img src="./images/svgs/iot_8.svg" alt="" />
           <p>Attracting new customers</p>
@@ -135,14 +138,14 @@
       </div>
     </section>
     <section class="iot_section7">
-      <h1></h1>
-      <form action="">
-        <div>
+      <h1>Schedule a call for a demostration</h1>
+      <form action="" class="iot_section7_form">
+        <div class="iot_section7_form_sub1">
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <input type="tel" placeholder="Phone" />
         </div>
-        <div>
+        <div class="iot_section7_form_sub2">
           <textarea
             name=""
             id=""
@@ -150,7 +153,7 @@
             rows="10"
             placeholder="Message"
           ></textarea>
-          <button>Submit</button>
+          <button>Contact Us</button>
         </div>
       </form>
     </section>
@@ -178,10 +181,10 @@
           </ul>
         </div>
       </div>
-      <div>
+      <div class="footer_product">
         <h1>Products</h1>
         <ul>
-          <p>Office in Box</p>
+          <a href="./office_in_a_box.html"><p>Office in Box</p></a>
           <a href="">AN-150</a>
           <br />
           <a href="">AN-150 Plus</a>
@@ -200,7 +203,7 @@
         </ul>
       </div>
       <div class="footer_support">
-        <h1>Lagos</h1>
+        <h1>Address</h1>
         <div>
           <p>
             9, Park Lane, GRA - Apapa, <br />
@@ -211,9 +214,11 @@
       </div>
     </footer>
     <script>
-        document.querySelector('.menu_icon').addEventListener('click', () => {
-          document.querySelector('.menu_icon_nav ').classList.toggle("displayNone");
-        });
-      </script>
+      document.querySelector('.menu_icon').addEventListener('click', () => {
+        document
+          .querySelector('.menu_icon_nav ')
+          .classList.toggle('displayNone');
+      });
+    </script>
   </body>
 </html>

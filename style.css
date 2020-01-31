@@ -52,11 +52,12 @@ header div ul a {
   display: none;
   position: absolute;
   top: 30px;
+  left: 20px;
   z-index: 10;
 }
 .header_nav_brand_layer1 a {
   display: block;
-  padding: 10px 70px 20px 20px;
+  padding: 10px 30px 10px 20px;
   color: #fff;
   border-top: 1px solid #6421da;
   background-color: #2d135a;
@@ -1034,17 +1035,38 @@ footer h1 {
   padding-top: 40px;
   background: #2d135a;
 }
-.iot_section5 > div {
+.iot_section5 h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 400;
+}
+.iot_section5_sub1 {
   display: flex;
   text-align: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 20px;
 }
-.iot_section5 > div div {
+.iot_section5_sub1 div {
   width: 200px;
   height: 150px;
   background: #dfd1f2;
-  margin-left: 20px;
+  /* margin-bottom: 40px; */
+  padding: 20px;
+}
+.iot_section5_sub2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.iot_section5_sub2 div {
+  width: 200px;
+  height: 150px;
+  background: #dfd1f2;
+  margin-left: 40px;
   margin-bottom: 40px;
   padding: 20px;
 }
@@ -1069,15 +1091,36 @@ footer h1 {
   background: #2d135a;
   padding: 40px;
 }
-.iot_section7 form input {
-  padding: 10px;
+.iot_section7 h1{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.iot_section7_form{
+  max-width: 600px;
+  margin: auto;
+}
+.iot_section7_form textarea{
+  width: 300px;
+  height: 100px;
+  padding: 20px 10px;
+  resize: none;
+  vertical-align: middle;
+}
+.iot_section7_form input {
+  padding: 10px 50px 10px 10px;
+  margin-right: 10px;
   margin-bottom: 10px;
 }
-.iot_section7 form button {
-  padding: 10px 20px;
+.iot_section7_form button {
+  margin-left: 10px;
+  padding: 10px 40px;
   color: #fff;
   background: #2d135a;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
+}
+.iot_section7_form_sub1{
+  margin-bottom: 20px;
 }
 /********* AI********/
 /************************/
@@ -1093,9 +1136,17 @@ footer h1 {
   padding-top: 10%;
   font-size: 60px;
 }
-.ai_section2 {
+.ai_section2{
+  background: #C4C4C4;
+  padding: 40px;
+}
+.ai_section2 p{
+ font-weight: 200;
+}
+.ai_section2 div{
+  background: #fff;
   max-width: 1024px;
-  margin: auto;
+  margin: 0 auto;
   line-height: 1.5;
   padding: 40px 10px;
   color: #2d135a;
@@ -1106,6 +1157,10 @@ footer h1 {
   text-align: center;
   color: #2d135a;
 }
+.ai_section3 h1{
+ margin: 40px 0;
+ font-size: 40px;
+}
 .ai_section3 > div {
   display: flex;
   justify-content: space-between;
@@ -1115,7 +1170,11 @@ footer h1 {
   width: 300px;
 }
 .ai_section3 > div div img {
+  height: 50px;
   width: 50px;
+}
+.ai_section3 > div div div:nth-of-type(1) p {
+  font-weight: bold;
 }
 .ai_section3 > div div div:nth-of-type(2) p {
   text-align: justify;
@@ -1151,7 +1210,7 @@ footer h1 {
 .office_box_banner {
   height: 400px;
   text-align: center;
- background: url(./images/office_box_banner.png);
+  background: url(./images/office_box_banner.png);
 }
 .office_box_banner h1 {
   padding-top: 10%;
