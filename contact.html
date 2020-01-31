@@ -15,14 +15,20 @@
           <img src="./images/ANYWAIR_LOGO_new_1.svg" alt="" />
         </a>
       </div>
-      <div>
+      <div class="header_nav">
         <ul>
-          <a href="about.html">Who we are</a>
-          <a href="#">The Brand</a>
-          <a href="our_focus.html">Our Focus</a>
-          <a href="#">Solutions</a>
-          <a href="#">Support</a>
-          <a href="contact.html">Contact</a>
+          <li><a href="about.html">Who we are</a></li>
+          <li class="header_nav_brand">
+            <a href="#">The Brand</a>
+            <ul class="header_nav_brand_layer1">
+              <a href="ai.html">AI</a>
+              <a href="iot.html">IoT</a>
+            </ul>
+          </li>
+          <li><a href="our_focus.html">Our Focus</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+          <li class="header_nav_contact"><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="menu_icon">
@@ -139,16 +145,15 @@
   ></script>
   <script>
     function myMap() {
-      var uluru = { lat: 6.4470506, lng: 3.3626595};
+      var uluru = { lat: 6.4470506, lng: 3.3626595 };
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 18,
         center: uluru
       });
       var marker = new google.maps.Marker({ position: uluru, map: map });
     }
-      document.querySelector('.menu_icon').addEventListener('click', () => {
-        document.querySelector('.menu_icon_nav ').classList.toggle("displayNone");
-      });
-
+    document.querySelector('.menu_icon').addEventListener('click', () => {
+      document.querySelector('.menu_icon_nav ').classList.toggle('displayNone');
+    });
   </script>
 </html>

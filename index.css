@@ -58,7 +58,8 @@ header div:nth-of-type(2) button {
   display: flex;
   justify-content: start;
   width: 100%;
-  height: calc(100vh - 56.61px - 40px);
+  height: calc(100vh - 40px);
+  position: relative;
 }
 .three_overlay_menu a {
   display: block;
@@ -95,8 +96,31 @@ header div:nth-of-type(2) button {
   color: #fff;
   font-weight: 400;
 }
+.index_req_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.index_req_button button{
+  padding: 10px;
+  font-size: 16px;
+  background: #2d135a;
+  color: #fff;
+}
 
+/* footer {
+  padding: 10px;
+} */
 footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer div img {
+  margin-left: 20px;
+  width: 100px;
+}
+footer ul {
   padding: 10px;
 }
 footer ul a {
