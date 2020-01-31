@@ -32,16 +32,39 @@ header {
 header .logo img {
   width: 100px;
 }
-header div ul {
+header .header_nav > ul {
+  display: flex;
+  justify-content: space-between;
   padding: 0.6rem;
 }
-
+header div ul li {
+  list-style: none;
+}
 header div ul a {
   padding: 0.6rem;
   font-size: 1rem;
   color: #2d135a;
 }
-.active_nav {
+.header_nav_brand {
+  position: relative;
+}
+.header_nav_brand_layer1 {
+  display: none;
+  position: absolute;
+  top: 30px;
+  z-index: 10;
+}
+.header_nav_brand_layer1 a {
+  display: block;
+  padding: 10px 70px 20px 20px;
+  color: #fff;
+  border-top: 1px solid #6421da;
+  background-color: #2d135a;
+}
+.header_nav_brand:hover .header_nav_brand_layer1 {
+  display: block;
+}
+.header_nav .active_nav {
   position: relative;
 }
 .active_nav:before {
@@ -55,7 +78,7 @@ header div ul a {
   transition: left 0.4s, right 0.4s;
   content: '';
 }
-header div ul a:last-of-type {
+.header_nav_contact a {
   color: #fff;
   background: #2d135a;
 }
@@ -108,22 +131,46 @@ header div ul a:last-of-type {
   margin-bottom: 40px;
 }
 .slide_1,
-.slide_2 {
+.slide_2,
+.slide_3,
+.slide_4 {
   position: relative;
 }
 .slide_1 h1 {
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 10%;
+  left: 25%;
   font-size: 80px;
+  font-weight: 400;
   color: #2d135a;
 }
 .slide_2 h1 {
+  text-align: left;
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 80px;
+  color: #fff;
+}
+.slide_3 h1 {
   text-align: center;
   position: absolute;
   top: 30%;
-  left: 30%;
-  font-size: 60px;
+  left: 25%;
+  font-size: 80px;
+  font-weight: 400;
+  color: #fff;
+}
+.slide_4 h1 {
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  line-height: 1;
+  font-size: 80px;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -422,6 +469,9 @@ footer h1 {
 .footer_support h4 {
   opacity: 0.8;
 }
+.footer_product a:not(:first-of-type) {
+  margin-left: 20px;
+}
 @media only screen and (max-width: 575.98px) {
   .sd_wan_info {
     height: 400px;
@@ -521,7 +571,7 @@ footer h1 {
 .about_banner h1 {
   padding-top: 14%;
   padding-right: 5%;
-  color: #fff;
+  color: #2d135a;
   font-size: 100px;
   font-weight: 400;
 }
@@ -1096,17 +1146,17 @@ footer h1 {
   text-align: center;
 } */
 
-
 /********* Office in a box********/
 /************************/
 .office_box_banner {
   height: 400px;
   text-align: center;
-  background-color: bisque;
+ background: url(./images/office_box_banner.png);
 }
 .office_box_banner h1 {
   padding-top: 10%;
   font-size: 60px;
+  color: #fff;
 }
 .office_box_section2 {
   max-width: 1024px;
