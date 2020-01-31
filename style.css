@@ -129,8 +129,33 @@ header div ul a {
   width: 100%;
   /* height: 85vh; */
   vertical-align: top;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
+.slick-dots {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  list-style-type: none;
+}
+.slick-dots li {
+  margin: 0 0.25rem;
+}
+.slick-dots button {
+  display: block;
+  width: .5rem;
+  height: .5rem;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: rgb(156, 156, 160);
+  text-indent: -9999px;
+}
+.slick-dots li.slick-active button {
+  background-color: rgb(46, 45, 45);
+}
+
 .slide_1,
 .slide_2,
 .slide_3,
@@ -1091,16 +1116,16 @@ footer h1 {
   background: #2d135a;
   padding: 40px;
 }
-.iot_section7 h1{
+.iot_section7 h1 {
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
 }
-.iot_section7_form{
+.iot_section7_form {
   max-width: 600px;
   margin: auto;
 }
-.iot_section7_form textarea{
+.iot_section7_form textarea {
   width: 300px;
   height: 100px;
   padding: 20px 10px;
@@ -1119,7 +1144,7 @@ footer h1 {
   background: #2d135a;
   border: 2px solid #fff;
 }
-.iot_section7_form_sub1{
+.iot_section7_form_sub1 {
   margin-bottom: 20px;
 }
 /********* AI********/
@@ -1136,14 +1161,14 @@ footer h1 {
   padding-top: 10%;
   font-size: 60px;
 }
-.ai_section2{
-  background: #C4C4C4;
+.ai_section2 {
+  background: #c4c4c4;
   padding: 40px;
 }
-.ai_section2 p{
- font-weight: 200;
+.ai_section2 p {
+  font-weight: 200;
 }
-.ai_section2 div{
+.ai_section2 div {
   background: #fff;
   max-width: 1024px;
   margin: 0 auto;
@@ -1157,9 +1182,9 @@ footer h1 {
   text-align: center;
   color: #2d135a;
 }
-.ai_section3 h1{
- margin: 40px 0;
- font-size: 40px;
+.ai_section3 h1 {
+  margin: 40px 0;
+  font-size: 40px;
 }
 .ai_section3 > div {
   display: flex;
