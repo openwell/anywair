@@ -19,20 +19,6 @@ a:link {
   text-decoration: none;
   color: #2d135a;
 }
-/* header {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
-}
-header .logo img {
-  width: 100px;
-}
-header div:nth-of-type(2) button {
-  padding: 10px;
-  font-size: 16px;
-  background: #2d135a;
-  color: #fff;
-} */
 .play_button1 {
   position: absolute;
   left: 50%;
@@ -42,11 +28,6 @@ header div:nth-of-type(2) button {
   z-index: 10;
   cursor: pointer;
 }
-
-/* .index_video_box {
-  height: calc(100vh - 56.61px - 40px - 25vh);
-  margin: auto;
-} */
 
 .hero_banner {
   background: #2d135a;
@@ -89,7 +70,6 @@ header div:nth-of-type(2) button {
   left: 0;
   bottom: 40px;
   font-size: 60px;
-  /* background: rgba(71, 22, 139, 0.29); */
   padding: 10px 10px;
   text-align: center;
   width: 100%;
@@ -101,18 +81,15 @@ header div:nth-of-type(2) button {
   top: 10px;
   right: 10px;
 }
-.index_req_button button{
+.index_req_button button {
   padding: 10px;
   font-size: 16px;
   background: #2d135a;
 }
-.index_req_button a{
+.index_req_button a {
   color: #fff;
 }
 
-/* footer {
-  padding: 10px;
-} */
 footer {
   display: flex;
   justify-content: space-between;
@@ -128,13 +105,20 @@ footer ul {
 footer ul a {
   padding: 10px 10px 10px 0;
 }
+@media (max-width: 1076px) {
+  .three_overlay_menu a h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .three_overlay_menu a h1 {
+    font-size: 35px;
+  }
+}
+
 @media (max-width: 575.98px) {
-  /* .index_video_box {
-    display: none;
-  } */
   .three_overlay_menu {
     flex-direction: column;
-    /* height: calc(100vh - 56.61px - 40px); */
   }
   .three_overlay_menu div {
     flex: 0 1 100%;
@@ -146,10 +130,23 @@ footer ul a {
   footer {
     padding: 5px;
   }
+  .three_overlay_menu > a:nth-of-type(1) {
+    background-position: 0px -190px;
+  }
+  .three_overlay_menu > a:nth-of-type(2) {
+    background-position: 0px -90px;
+  }
 }
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .hero_banner_text h1 {
-    font-size: 60px;
-    width: 100%;
+@media (max-width: 425px) {
+  .three_overlay_menu > a:nth-of-type(1) {
+    background-position: 0px -100px;
+  }
+  .three_overlay_menu > a:nth-of-type(2) {
+    background-position: 0px -40px;
+  }
+}
+@media (max-width: 375px) {
+  .three_overlay_menu > a:nth-of-type(1) {
+    background-position: 0px -80px;
   }
 }
