@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -22,7 +25,7 @@
       </div>
       <div class="header_nav">
         <ul>
-          <li><a href="about.html">Who we are</a></li>
+          <li><a href="about.html">Our Story</a></li>
           <li class="header_nav_brand">
             <a href="#">The Brand</a>
             <ul class="header_nav_brand_layer1">
@@ -38,16 +41,24 @@
       </div>
       <div class="menu_icon">
         <span>&#9776;</span>
-        <div class="menu_icon_nav">
-          <ul>
-            <a href="about.html">Who we are</a>
-            <a href="#">The Brand</a>
-            <a href="our_focus.html">Our Focus</a>
-            <a href="#">Solutions</a>
-            <a href="#">Support</a>
-            <a href="contact.html">Contact</a>
-          </ul>
-        </div>
+      </div>
+      <div class="menu_icon_nav">
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li class="menu_nav_brand">
+            <a href="#"
+              >The Brand <ion-icon name="arrow-dropdown"></ion-icon
+            ></a>
+            <ul class="menu_nav_brand_layer1">
+              <a href="iot.html">IoT</a>
+              <a href="ai.html">AI</a>
+            </ul>
+          </li>
+          <li><a href="our_focus.html">Our Focus</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </header>
     <section class="hero_banner">
@@ -238,11 +249,7 @@
         prevArrow: false,
         nextArrow: false
       });
-      document.querySelector('.menu_icon').addEventListener('click', () => {
-        document
-          .querySelector('.menu_icon_nav ')
-          .classList.toggle('displayNone');
-      });
     </script>
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -109,15 +109,20 @@ header div ul a {
   display: none;
   transition: opacity 1s ease;
 }
-.displayNone {
-  display: block;
-}
+
 .menu_icon_nav ul {
   background: #fff;
 }
 .menu_icon_nav ul a {
   display: block;
   border-bottom: 1px solid #2d135a;
+}
+
+.menu_nav_brand_layer1 {
+  display: none;
+}
+.menu_nav_brand_layer1 a{
+  padding-left: 40px;
 }
 
 @media (max-width: 575.98px) {
@@ -645,6 +650,7 @@ footer h1 {
 .our_focus_sections > div div p {
   line-height: 1.5;
   color: #5f6368;
+  margin-bottom: 20px;
 }
 .our_focus_sections > div div h1 {
   font-weight: 400;
@@ -681,13 +687,14 @@ footer h1 {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
   margin-top: 50px;
 }
 .about_our_story div {
-  padding-top: 5%;
+  padding-top: 1%;
   padding-left: 10%;
   color: #fff;
+  padding-bottom: 1%;
 }
 .about_our_story div h1 {
   font-size: 80px;
@@ -695,9 +702,10 @@ footer h1 {
   margin-bottom: 20px;
 }
 .about_our_story div p {
-  max-width: 500px;
-  font-size: 20px;
+  max-width: 600px;
+  font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 .know_us_more {
   padding: 10px;
@@ -752,7 +760,7 @@ footer h1 {
   .about_our_story div p {
     font-size: 16px;
     max-width: 100%;
-    word-break: break-all;
+    /* word-break: break-all; */
     hyphens: auto;
   }
   .about_banner {
@@ -763,12 +771,12 @@ footer h1 {
     bottom: 40%;
     font-size: 40px;
   }
-  .about_our_story {
+  /* .about_our_story {
     height: 300px;
-  }
+  } */
   .about_our_story div {
     padding: 10px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     color: #fff;
   }
   .know_us_more > div {
@@ -1448,7 +1456,7 @@ footer h1 {
 .office_box_banner {
   height: 400px;
   text-align: center;
-  background: url(./images/office_box_banner.png);
+  background: url(./images/office_in_a_box_header.jpg);
 }
 .office_box_banner h1 {
   padding-top: 10%;
@@ -1560,7 +1568,7 @@ footer h1 {
   flex-wrap: wrap;
   max-width: 1024px;
   margin: 40px auto;
-  background-color: #450b19;
+  background-color: #a40000;
   padding: 40px;
 }
 .office_box_section6 div {
@@ -1571,7 +1579,7 @@ footer h1 {
 
 .office_box_section7 {
   color: #fff;
-  background-color: #450b19;
+  background-color: #a40000;
   max-width: 1024px;
   margin: 40px auto;
   padding: 80px 4px;
@@ -1614,7 +1622,6 @@ footer h1 {
   }
 }
 @media (max-width: 575.98px) {
-
   .office_box_section4 > div:nth-of-type(2) div:not(:nth-of-type(3)) {
     border-right: 0;
   }
@@ -1639,6 +1646,9 @@ footer h1 {
   .office_box_section5 p:first-of-type {
     padding: 20px;
   }
+}
+.displayNone {
+  display: block;
 }
 /* @media (max-width: 575.98px) {
 }

@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Who we are</title>
+    <title>Our Story</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -17,7 +20,7 @@
       </div>
       <div class="header_nav">
         <ul>
-          <li><a class="active_nav" href="about.html">Who we are</a></li>
+          <li><a class="active_nav" href="about.html">Our Story</a></li>
           <li class="header_nav_brand">
             <a href="#">The Brand</a>
             <ul class="header_nav_brand_layer1">
@@ -33,29 +36,49 @@
       </div>
       <div class="menu_icon">
         <span>&#9776;</span>
-        <div class="menu_icon_nav">
-          <ul>
-            <a href="about.html">Who we are</a>
-            <a href="#">The Brand</a>
-            <a href="our_focus.html">Our Focus</a>
-            <a href="#">Products</a>
-            <a href="#">Support</a>
-            <a href="contact.html">Contact</a>
-          </ul>
-        </div>
+      </div>
+      <div class="menu_icon_nav">
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li class="menu_nav_brand">
+            <a href="#"
+              >The Brand <ion-icon name="arrow-dropdown"></ion-icon
+            ></a>
+            <ul class="menu_nav_brand_layer1">
+              <a href="iot.html">IoT</a>
+              <a href="ai.html">AI</a>
+            </ul>
+          </li>
+          <li><a href="our_focus.html">Our Focus</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </header>
     <section class="about_banner">
-      <h1>Who we are</h1>
+      <h1>Our Story</h1>
     </section>
     <section class="about_our_story">
       <div>
         <h1>Our Story</h1>
         <p>
-          abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz about your local
-          store or our corporate headquarters Contact our Customer Service team
-          to provide a comment or ask a question about your local store or our
-          corporate headquarters
+          AnyWair is the Registered Trademark of TeleWeb Services Ltd, an ASP &
+          IOT company Licensed by the Nigerian Communications Commission (NCC)
+          to build, maintain and, operate Wireless Networks and Private Network
+          Links (PNL), with the goal to advance businesses in Nigeria and across
+          Africa with latest infrastructure, technology and solutions; thus,
+          driving productivity, business agility and reliability.
+        </p>
+        <p>
+          We are the first IoT company in Nigeria to offer SD-WAN deployed over
+          our CDN infrastructure. We are progressively building our network
+          across the nation and diversifying into Artificial intelligence as the
+          world continues to experience major technology advancements.
+        </p>
+        <p>
+          TeleWeb has been in operations since early 2019, with HeadQuarters in
+          Lagos, Nigeria and with a branch office in Abuja, Nigeria.
         </p>
       </div>
     </section>
@@ -64,39 +87,35 @@
       <div>
         <div>
           <h1>
-            Strategy Insight
-            <span><img src="./images/svgs/insight.svg" alt=""/></span>
-          </h1>
-          <p>
-            We are here to deliver the best in Connectivity IT solutions to our
-            clients, we understand the need for small business to grow and we
-            are committed in helping.
-          </p>
-        </div>
-        <div>
-          <h1>
             Our Mission
             <span><img src="./images/svgs/mission.svg" alt=""/></span>
           </h1>
           <p>
-            We are committed to creating superior value to our customers by
-            leveraging on technology to create innovative solutions. We maintain
-            immaculate customer satisfaction while helping our prestige client
-            maximize profit.
+            To provide the latest services to Nigerian and African businesses,
+            through reliable, secure, efficient and cost effective solutions;
+            boosting connectivity anywhere.
           </p>
         </div>
         <div>
           <h1>
-            Our Vission
+            Our Vision
             <span><img src="./images/svgs/vision.svg" alt=""/></span>
           </h1>
           <p>
-            To be acknowledged as a leader in Connectivity, Cloud Services and
-            I.T solutions and valued as an integral component of our client’s
-            corporate strategy, we accomplish our goals by competing with
-            ever-changing technological advancements and innovations by making
-            them available for potential customers and clients.
+            To become Africa’s Leading Complete Solution Provider.
           </p>
+        </div>
+        <div>
+          <h1>
+            Our Values
+            <span><img src="./images/svgs/insight.svg" alt=""/></span>
+          </h1>
+          <p><ion-icon name="checkmark-circle"></ion-icon> Reliability</p>
+          <p><ion-icon name="checkmark-circle"></ion-icon> Innovation</p>
+          <p><ion-icon name="checkmark-circle"></ion-icon> Excellence</p>
+          <p><ion-icon name="checkmark-circle"></ion-icon> Team Spirit</p>
+          <p><ion-icon name="checkmark-circle"></ion-icon> Integrity</p>
+          <p><ion-icon name="checkmark-circle"></ion-icon> Customer Centric</p>
         </div>
       </div>
     </section>
@@ -160,12 +179,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      document.querySelector('.menu_icon').addEventListener('click', () => {
-        document
-          .querySelector('.menu_icon_nav ')
-          .classList.toggle('displayNone');
-      });
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
