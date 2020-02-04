@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Our Focus</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </head>
   <body>
     <header>
@@ -17,7 +20,7 @@
       </div>
       <div class="header_nav">
         <ul>
-          <li><a href="about.html">Who we are</a></li>
+          <li><a href="about.html">Our Story</a></li>
           <li class="header_nav_brand">
             <a href="#">The Brand</a>
             <ul class="header_nav_brand_layer1">
@@ -33,16 +36,24 @@
       </div>
       <div class="menu_icon">
         <span>&#9776;</span>
-        <div class="menu_icon_nav">
-          <ul>
-            <a href="about.html">Who we are</a>
-            <a href="#">The Brand</a>
-            <a href="our_focus.html">Our Focus</a>
-            <a href="#">Solutions</a>
-            <a href="#">Support</a>
-            <a href="contact.html">Contact</a>
-          </ul>
-        </div>
+      </div>
+      <div class="menu_icon_nav">
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li class="menu_nav_brand">
+            <a href="#"
+              >The Brand <ion-icon name="arrow-dropdown"></ion-icon
+            ></a>
+            <ul class="menu_nav_brand_layer1">
+              <a href="iot.html">IoT</a>
+              <a href="ai.html">AI</a>
+            </ul>
+          </li>
+          <li><a href="our_focus.html">Our Focus</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </header>
     <section class="our_focus_banner">
@@ -61,11 +72,19 @@
             Banks
           </h1>
           <p>
-            Spectra Managed SD-WAN helps simplify your WAN environment by
-            establishing a unified overlay plane across disparate networks. We
-            provide a centrally-hosted solution for management which enables
-            your IT staff to remotely program edge devices and make changes in
-            network policies centrally, in real time.
+            How can financial services organisations differentiate their
+            offerings, improve productivity and grow in the face of fierce
+            competition and other challenges?
+          </p>
+          <p>
+            Under the pressure of newer technology advancements, your financial
+            institution must deliberately enhance its competitiveness digitally.
+          </p>
+          <p>
+            Teleweb brings a unique suite of capabilities focused on automating
+            and streamlining processes, improving productivity and security,
+            creating and optimising performance, reducing complexity and
+            expanding cost effectively into new markets.
           </p>
         </div>
       </div>
@@ -77,12 +96,29 @@
             >Enterprise
           </h1>
           <p>
-            Spectra Managed SD-WAN helps simplify your WAN environment by
-            establishing a unified overlay plane across disparate networks. We
-            provide a centrally-hosted solution for management which enables
-            your IT staff to remotely program edge devices and make changes in
-            network policies centrally, in real time.
+            Manage your business and scale up your productivity with our
+            solutions suitable for SMEs. Teleweb offers one of the most advanced
+            solutions to manage and give you access to your business. As a
+            business owner, take full control over your business on-the-go and
+            remotely, monitor your teams targets, your sales achievements and
+            reach the next level of performance. Our AN150 office-in-a-box is
+            ideal for small and medium scale businesses or organisations that
+            require high quality service with a small budget. Our solutions are
+            affordable, reliable, safe and secure.
           </p>
+          <p><ion-icon name="done-all"></ion-icon> Some of the benefits:</p>
+          <p>
+            <ion-icon name="done-all"></ion-icon> Never run of data (Pay for
+            what you use)
+          </p>
+          <p><ion-icon name="done-all"></ion-icon> One stop shop solution</p>
+          <p><ion-icon name="done-all"></ion-icon> High Quality</p>
+          <p><ion-icon name="done-all"></ion-icon> Secure</p>
+          <p>
+            <ion-icon name="done-all"></ion-icon>
+            Local backup and archiving
+          </p>
+          <p><ion-icon name="done-all"></ion-icon> Cloud backup and storage</p>
         </div>
         <div>
           <img src="./images/our_focus/focus_sme.jpg" alt="" />
@@ -99,12 +135,34 @@
             >Hotels
           </h1>
           <p>
-            Spectra Managed SD-WAN helps simplify your WAN environment by
-            establishing a unified overlay plane across disparate networks. We
-            provide a centrally-hosted solution for management which enables
-            your IT staff to remotely program edge devices and make changes in
-            network policies centrally, in real time.
+            Your industry is all about providing a service to others – so being
+            able to showcase products, communicate in real time with customers
+            and being available around the clock is integral to your success.
+            Being offline isn’t an option; that’s why we take the time to
+            understand your current infrastructure, your business model and
+            challenges to develop an IT service that you can depend on. Teleweb
+            provides a complete, end-to-end Wi-Fi solution and management to
+            businesses, backed by excellent connectivity services. This frees
+            businesses from the burden and huge CAPEX cost of setting up and
+            managing Wifi networks, while enabling innovative forms of service
+            delivery.
           </p>
+          <p>
+            The Managed Wi-Fi service is delivered with capabilities to enhance
+            employee productivity while aiding to attract, engage and retain
+            customers. Fast and easily accessible Wi-Fi connectivity offers
+            enhanced productivity, efficiency and ease of business, saving you
+            from capital expenditure and difficulties managing in-house.
+          </p>
+          <p>
+            Boost your revenue by providing additional services to your
+            customers such as;
+          </p>
+          <p>Free wifi</p>
+          <p>Run discounts</p>
+          <p>Iptv</p>
+          <p>Excellent internet connectivity</p>
+          <p>Data collation to engage your regular customers</p>
         </div>
       </div>
       <div>
@@ -115,11 +173,20 @@
             >Healthcare
           </h1>
           <p>
-            Spectra Managed SD-WAN helps simplify your WAN environment by
-            establishing a unified overlay plane across disparate networks. We
-            provide a centrally-hosted solution for management which enables
-            your IT staff to remotely program edge devices and make changes in
-            network policies centrally, in real time.
+            The SD-WAN technology in office in a box ensures 24/7 redundant,
+            hassle-free connectivity with access to multiple networks, enabling
+            continuous access and availability to Electronic Medical Records
+            (EMR), facilitation and monitoring of real-time medical treatments
+            in remote stations and the efficient executions of network dependent
+          </p>
+          <p>
+            It also offers a dedicated virtual IT assistant providing real-time
+            support for network users, on-site storage of medical records with
+            the option to backup in the cloud.
+          </p>
+          <p>
+            A fortified firewall solution guarantees that patient and medical
+            records are protected against cyber threats and malwares.
           </p>
         </div>
         <div>
@@ -138,11 +205,19 @@
             Estates
           </h1>
           <p>
-            Spectra Managed SD-WAN helps simplify your WAN environment by
-            establishing a unified overlay plane across disparate networks. We
-            provide a centrally-hosted solution for management which enables
-            your IT staff to remotely program edge devices and make changes in
-            network policies centrally, in real time.
+            Estate security is guaranteed with 24/7 surveillance (with or
+            without electricity), smooth communication links between residents
+            and the security post are established by deploying Office in a box.
+          </p>
+          <p>
+            A redundant network connectivity with the option to choose over
+            multiple networks ensures that residents are always connected to the
+            internet.
+          </p>
+          <p>
+            Office in a box comes with a dedicated support app to manage network
+            related issues so that residents no longer have to deal with the
+            challenges of maintaining a unified system.
           </p>
         </div>
       </div>
@@ -163,26 +238,6 @@
         </div>
         <div>
           <img src="./images/our_focus/focus_mall.jpg" alt="" />
-        </div>
-      </div>
-      <div>
-        <div>
-          <img src="./images/our_focus/focus_restaurants.jpg" alt="" />
-        </div>
-        <div>
-          <h1>
-            <span class="our_focus_svg_icons"
-              ><img src="./images/svgs/resturant01.svg" alt=""
-            /></span>
-            Retail Outlets
-          </h1>
-          <p>
-            Spectra Managed SD-WAN helps simplify your WAN environment by
-            establishing a unified overlay plane across disparate networks. We
-            provide a centrally-hosted solution for management which enables
-            your IT staff to remotely program edge devices and make changes in
-            network policies centrally, in real time.
-          </p>
         </div>
       </div>
     </section>
@@ -245,12 +300,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      document.querySelector('.menu_icon').addEventListener('click', () => {
-        document
-          .querySelector('.menu_icon_nav ')
-          .classList.toggle('displayNone');
-      });
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>

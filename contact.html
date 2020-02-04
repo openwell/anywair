@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+  ></script>
   </head>
   <body>
     <header>
@@ -17,7 +20,7 @@
       </div>
       <div class="header_nav">
         <ul>
-          <li><a href="about.html">Who we are</a></li>
+          <li><a href="about.html">Our Story</a></li>
           <li class="header_nav_brand">
             <a href="#">The Brand</a>
             <ul class="header_nav_brand_layer1">
@@ -33,16 +36,24 @@
       </div>
       <div class="menu_icon">
         <span>&#9776;</span>
-        <div class="menu_icon_nav">
-          <ul>
-            <a href="about.html">Who we are</a>
-            <a href="#">The Brand</a>
-            <a href="our_focus.html">Our Focus</a>
-            <a href="#">Products</a>
-            <a href="#">Support</a>
-            <a href="contact.html">Contact</a>
-          </ul>
-        </div>
+      </div>
+      <div class="menu_icon_nav">
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li class="menu_nav_brand">
+            <a href="#"
+              >The Brand <ion-icon name="arrow-dropdown"></ion-icon
+            ></a>
+            <ul class="menu_nav_brand_layer1">
+              <a href="iot.html">IoT</a>
+              <a href="ai.html">AI</a>
+            </ul>
+          </li>
+          <li><a href="our_focus.html">Our Focus</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </header>
     <section class="contact_banner">
@@ -149,17 +160,5 @@
     defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5vFEjFpuO04h5PuFYfdBRO_JgdAjryAg&callback=myMap"
   ></script>
-  <script>
-    function myMap() {
-      var uluru = { lat: 6.4470506, lng: 3.3626595 };
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 18,
-        center: uluru
-      });
-      var marker = new google.maps.Marker({ position: uluru, map: map });
-    }
-    document.querySelector('.menu_icon').addEventListener('click', () => {
-      document.querySelector('.menu_icon_nav ').classList.toggle('displayNone');
-    });
-  </script>
+  <script src="./index.js"></script>
 </html>

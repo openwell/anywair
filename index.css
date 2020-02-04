@@ -51,12 +51,12 @@ a:link {
 }
 
 .three_overlay_menu > a:nth-of-type(1) {
-  background: url(./images/index_focus.jpg) no-repeat;
+  background: url(./images/index_about.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
 .three_overlay_menu > a:nth-of-type(2) {
-  background: url(./images/index_about.jpg) no-repeat;
+  background: url(./images/index_office_in_a_box.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
