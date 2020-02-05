@@ -652,13 +652,14 @@ footer h1 {
   margin: 0 auto;
   margin-top: 40px;
 }
+
 /* .our_focus_sections > div {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 } */
 .our_focus_sections > div {
- margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 .our_focus_sections > div:nth-of-type(odd) > img {
   width: 100%;
@@ -673,7 +674,7 @@ footer h1 {
   margin-left: 20px;
 }
 
-.our_focus_svg_icons{
+.our_focus_svg_icons {
   width: 20px;
   margin-left: 10px;
 }
@@ -690,28 +691,45 @@ footer h1 {
   margin-bottom: 10px;
   display: inline-block;
 }
-
+.our_focus_sections_flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.our_focus_sections_flex p {
+  flex: calc(100% / 3);
+}
 /* .our_focus_svg_icons {
   width: 20px;
   margin-right: 10px;
 } */
+@media (max-width: 900px) {
+  .our_focus_sections_flex p {
+    flex: calc(100% / 2);
+  }
+}
 @media (max-width: 575.98px) {
+  .our_focus_sections > div {
+    margin-bottom: 10px;
+  }
   /* .our_focus_sections > div {
     flex-direction: column;
   } */
+  .our_focus_sections_flex {
+    flex-direction: column;
+  }
   .our_focus_sections > div p {
-   padding: 10px;
+    padding: 10px;
   }
   .our_focus_banner {
     height: 300px;
   }
   .our_focus_banner h1 {
-    padding-top: 30%;
-    font-size: 60px;
+    font-size: 40px;
     padding: 10px;
+    padding-top: 190px;
   }
   .our_focus_sections > div:nth-of-type(odd) > img {
-    
     margin-right: 0px;
   }
   .our_focus_sections > div:nth-of-type(even) > img {
@@ -760,11 +778,13 @@ footer h1 {
   margin-bottom: 20px;
 }
 .about_our_story div p {
-  /* max-width: 600px; */
   text-align: justify;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+}
+.about_our_story div p:last-of-type {
+  margin-bottom: 40px;
 }
 .know_us_more {
   padding: 10px;
@@ -1582,8 +1602,8 @@ footer h1 {
 }
 .office_box_section3 div:nth-of-type(4),
 .office_box_section3 div:nth-of-type(5),
-.office_box_section3 div:nth-of-type(6){
-  width: 100%
+.office_box_section3 div:nth-of-type(6) {
+  width: 100%;
 }
 
 .office_box_section3 div img {
@@ -1600,6 +1620,9 @@ footer h1 {
   font-weight: 200;
   color: #000;
   margin-bottom: 10px;
+}
+.office_box_section3 li{
+  list-style: none;
 }
 .office_box_section4 {
   max-width: 1024px;
@@ -1653,17 +1676,20 @@ footer h1 {
   max-width: 1024px;
   margin: 40px auto;
   background-color: #a40000;
-  padding: 10px;
+  padding: 20px;
 }
 .office_box_section6 div {
   background-color: #fff;
   padding: 20px;
   margin-bottom: 20px;
 }
-.office_box_section6 div h1{
+.office_box_section6 div:last-of-type {
+  margin-bottom: 0px;
+}
+.office_box_section6 div h1 {
   color: #a40000;
 }
-.office_box_section6 div p{
+.office_box_section6 div p {
   font-weight: 200;
   margin-bottom: 10px;
 }
