@@ -22,7 +22,7 @@ button {
 a:visited,
 a:link {
   text-decoration: none;
-  color: #000;
+  /* color: #000; */
 }
 hr {
   clear: both;
@@ -54,10 +54,12 @@ header div ul a {
   font-size: 1rem;
   color: #2d135a;
 }
-.header_nav_brand {
+.header_nav_brand,
+.header_nav_product {
   position: relative;
 }
-.header_nav_brand_layer1 {
+.header_nav_brand_layer1,
+.header_nav_product_layer1 {
   display: none;
   position: absolute;
   top: 30px;
@@ -71,6 +73,14 @@ header div ul a {
   border-top: 1px solid #6421da;
   background-color: #2d135a;
 }
+.header_nav_product_layer1 a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  border-top: 1px solid #6421da;
+  background-color: #2d135a;
+}
+.header_nav_product:hover .header_nav_product_layer1,
 .header_nav_brand:hover .header_nav_brand_layer1 {
   display: block;
 }
@@ -546,7 +556,8 @@ footer a:visited {
   color: #421b85;
 }
 footer img {
-  width: 150px;
+  width: 180px;
+  margin-left: -20px;
 }
 .footer_stay_connected ion-icon {
   color: #2d135a;
@@ -581,10 +592,9 @@ footer h1 {
   margin-left: 20px;
 }
 .section_footer2 {
-  max-width: 1024px;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* max-width: 1024px; */
+  /* margin: 0 auto; */
+  margin: 10px 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -592,7 +602,12 @@ footer h1 {
   color: #2d135a;
 }
 .section_footer2 div:first-of-type p {
+  vertical-align: -webkit-baseline-middle;
   display: inline;
+  font-weight: 700;
+}
+.section_footer2 div:last-of-type p {
+  margin-top: 15px;
 }
 .section_footer2 div img {
   width: 50px;
@@ -665,18 +680,23 @@ footer h1 {
   width: 100%;
   max-width: 400px;
   float: left;
+  margin-top: 10px;
   margin-right: 20px;
 }
 .our_focus_sections > div:nth-of-type(even) > img {
   width: 100%;
   max-width: 400px;
   float: right;
+  margin-top: 10px;
   margin-left: 20px;
 }
 
 .our_focus_svg_icons {
   width: 20px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+}
+.our_focus_sections h3 {
+  font-weight: 400;
 }
 
 .our_focus_sections > div p {
@@ -690,6 +710,7 @@ footer h1 {
   font-size: 30px;
   margin-bottom: 10px;
   display: inline-block;
+  color: #171449;
 }
 .our_focus_sections_flex {
   display: flex;
@@ -761,7 +782,7 @@ footer h1 {
 }
 
 .about_our_story {
-  background: url(./images/about/Our_Source_textured_background_3.png) no-repeat;
+  background: url(./images/about/Our_Source_textured_background_3.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -775,7 +796,7 @@ footer h1 {
 .about_our_story div h1 {
   font-size: 80px;
   font-weight: 400;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .about_our_story div p {
   text-align: justify;
@@ -834,7 +855,7 @@ footer h1 {
   .about_our_story div h1 {
     font-size: 50px;
     font-weight: 400;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   .about_our_story div p {
     font-size: 16px;
@@ -903,17 +924,25 @@ footer h1 {
   flex-wrap: wrap;
 }
 
-.contact_main_sub1 div {
-  flex: 0 1 350px;
+.contact_main_sub1 > div {
+  /* flex: 1; */
   background: #2d135a;
   padding: 40px;
   color: #fff;
   margin-bottom: 20px;
 }
+.contact_main_sub1 > div:first-of-type {
+  width: 30%;
+  height: fit-content;
+}
+.contact_main_sub1 > div:last-of-type {
+  width: 50%;
+  border-radius: 10px;
+}
 .contact_form label {
   display: block;
   font-weight: 200;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .contact_form input,
 .contact_form textarea {
@@ -923,32 +952,52 @@ footer h1 {
   font-size: 16px;
   margin-bottom: 10px;
 }
+.contact_form input {
+  outline: none;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  background-color: #2d135a;
+}
+
 .contact_form button {
-  padding: 5px 10px;
+  padding: 10px;
   font-size: 14px;
   background: #fff;
   width: 100%;
+  border-radius: 50px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .contact_form textarea {
   resize: none;
   max-height: 120px;
 }
-.contact_main_sub1 div:nth-of-type(2) {
+.contact_main_sub1 div:nth-of-type(1) {
   line-height: 1.5;
 }
-.contact_main_sub1 div:nth-of-type(2) p {
+.contact_main_sub1 div:nth-of-type(1) p {
   margin-bottom: 20px;
 }
-.contact_main_sub1 div:nth-of-type(2) ion-icon {
+.contact_main_sub1 div:nth-of-type(1) ion-icon {
   vertical-align: middle;
   font-size: 25px;
 }
-.contact_main_sub1 div:nth-of-type(2) a:visited,
-.contact_main_sub1 div:nth-of-type(2) a:link {
+.contact_main_sub1 div:nth-of-type(1) a:visited,
+.contact_main_sub1 div:nth-of-type(1) a:link {
   color: #fff;
 }
 @media (max-width: 991.98px) {
+  .contact_main_sub1 {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact_main_sub1 > div:first-of-type {
+    width: 100%;
+  }
+  .contact_main_sub1 > div:last-of-type {
+    width: 100%;
+  }
   .contact_banner h1 {
     padding-top: 20%;
     font-size: 70px;
@@ -961,12 +1010,8 @@ footer h1 {
   .contact_banner h1 {
     font-size: 50px;
   }
-  .contact_main_sub1 {
-    justify-content: center;
-    flex-direction: column;
-  }
   .contact_main_sub1 div {
-    padding: 20px;
+    padding: 10px;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -996,10 +1041,21 @@ footer h1 {
   padding-right: 16%;
   font-weight: 400;
 }
-.sd_wan_section_2 {
-  width: 100%;
-  height: 50px;
-  background: #705cb1;
+.sd_wan_section_2{
+  margin-top: 40px;
+  background: #2d135a;
+}
+.sd_wan_section_2 div > h1{
+  font-size: 40px;
+}
+
+.sd_wan_section_2 div{
+  max-width: 1024px;
+  margin: auto;
+  padding: 40px 0;
+  background: #2d135a;
+  color: #fff;
+  text-align: justify;
 }
 .sd_wan_section_3 {
   text-align: center;
@@ -1020,12 +1076,16 @@ footer h1 {
 
 .sd_wan_section_3 h1 {
   font-size: 40px;
+  margin-bottom: -80px;
 }
-.sd_wan_section_3 > p:nth-of-type(1) {
+/* .sd_wan_section_3 > p:nth-of-type(1) {
   max-width: 700px;
   margin: auto;
   font-size: 20px;
   margin: 30px auto;
+} */
+.sd_wan_section_3 > img {
+  width: 100px;
 }
 .sd_wan_section_3_4tabs h1 {
   font-size: 20px;
@@ -1041,14 +1101,16 @@ footer h1 {
   line-height: 1.5;
   text-align: justify;
 }
-.sd_wan_section_3 > p:nth-of-type(2) {
+.sd_wan_section_3 > p:nth-of-type(1) {
   font-size: 25px;
+  font-weight: 300;
   margin: 60px auto;
+  margin-bottom: 10px;
 }
 .sd_wan_section_3_subSec2 {
-  background: url(./images/abstract_wave01.png);
+  /* background: url(./images/abstract_wave01.png);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   margin: 80px 0;
   display: flex;
   justify-content: space-between;
@@ -1163,7 +1225,7 @@ footer h1 {
 /********* IOT********/
 /************************/
 .iot_banner {
-  background: url(./images/iot_banner.png) no-repeat;
+  background: url(./images/iot_banner.jpg) no-repeat;
   background-position: top;
   background-size: cover;
   height: 400px;
@@ -1197,7 +1259,7 @@ footer h1 {
 }
 .iot_section3 {
   background: linear-gradient(rgba(4, 0, 79, 0.603), rgba(4, 0, 79, 0.603)),
-    url(./images/iot_banner2.png) no-repeat;
+    url(./images/iot_banner2.jpg) no-repeat;
   background-position: top;
   background-size: cover;
   height: 400px;
@@ -1382,7 +1444,7 @@ footer h1 {
 /********* AI********/
 /************************/
 .ai_banner {
-  background: url(./images/ai_banner.png) no-repeat;
+  background: url(./images/ai_banner.jpg) no-repeat;
   background-position: top;
   background-size: cover;
   height: 400px;
@@ -1547,6 +1609,11 @@ footer h1 {
   font-size: 60px;
   color: #fff;
 }
+.office_box_section2 h1,
+.office_box_section4 h1,
+.office_box_section5 h1 {
+  font-size: 30px;
+}
 .office_box_section2 {
   max-width: 1024px;
   margin: 40px auto;
@@ -1561,7 +1628,7 @@ footer h1 {
   text-align: justify;
 }
 .office_box_section2 > div {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 .office_box_section2 > div:nth-of-type(1) > div {
   width: 50%;
@@ -1569,13 +1636,16 @@ footer h1 {
 .office_box_section2 > div:nth-of-type(1) div:nth-of-type(1) {
   padding-right: 20px;
 }
+.office_box_section2 > div:nth-of-type(1) div:nth-of-type(2) {
+  text-align: end;
+}
 .office_box_section2 > div:nth-of-type(1) div:nth-of-type(1) p {
   margin-top: 20px;
   font-weight: 200;
   color: #000;
 }
 .office_box_section2 > div:nth-of-type(1) div img {
-  max-width: 400px;
+  width: 400px;
 }
 .office_box_section2 > div:nth-of-type(2) p {
   margin-top: 20px;
@@ -1612,16 +1682,21 @@ footer h1 {
   /* color: #e83f32; */
 }
 .office_box_section3 div h1 {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 10px;
   color: #e83f32;
+}
+.office_box_section3 div h3 {
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
 }
 .office_box_section3 div p {
   font-weight: 200;
   color: #000;
   margin-bottom: 10px;
 }
-.office_box_section3 li{
+.office_box_section3 li {
   list-style: none;
 }
 .office_box_section4 {
@@ -1636,21 +1711,48 @@ footer h1 {
   list-style: none;
   font-weight: 200;
 }
-.office_box_section4 > div:nth-of-type(2) {
+.office_box_section4 li img {
+  width: 50px;
+  color: #000;
+}
+.office_box_section4_sub1 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.office_box_section4_sub1 ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.office_box_section4_sub1 ul li {
+  text-align: center;
+  width: 200px;
+  background: #c4302b;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+  color: #fff;
+}
+.office_box_section4_sub2 > h1 {
+  text-align: center;
+}
+.office_box_section4_sub2 > div {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 80px;
 }
-.office_box_section4 > div:nth-of-type(2) div:not(:nth-of-type(3)) {
+.office_box_section4_sub2 div div:not(:nth-of-type(3)) {
   border-right: 1px solid #e83f32;
 }
-.office_box_section4 > div:nth-of-type(2) div {
+.office_box_section4_sub2 div {
   padding: 20px 40px 20px 0;
 }
-.office_box_section4 > div:nth-of-type(2) div h1 {
+.office_box_section4_sub2 div h1 {
   color: #e83f32;
+  font-size: 20px;
 }
-.office_box_section4 > div:nth-of-type(2) div p {
+.office_box_section4_sub2 div p {
   font-weight: 200;
 }
 .office_box_section5 {
@@ -1658,10 +1760,10 @@ footer h1 {
   margin: 40px auto;
   text-align: center;
 }
-/* .office_box_section5 img {
+.office_box_section5 img {
   width: 70px;
-  margin-top: 40px;
-} */
+  /* margin-top: 40px; */
+}
 .office_box_section5 span {
   font-weight: 200;
 }
