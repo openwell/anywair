@@ -34,7 +34,14 @@
             </ul>
           </li>
           <li><a href="our_focus.html">Our Focus</a></li>
-          <li><a href="#">Products</a></li>
+          <li class="header_nav_product">
+            <a href="#">Products</a>
+            <ul class="header_nav_product_layer1">
+              <a href="iot.html">AN-100</a>
+              <a href="iot.html">AN-150</a>
+              <a href="iot.html">AN-300</a>
+            </ul>
+          </li>
           <li><a href="#">Support</a></li>
           <li class="header_nav_contact"><a href="contact.html">Contact</a></li>
         </ul>
@@ -64,14 +71,14 @@
     <section class="hero_banner">
       <div class="slide_1">
         <h1>Boost Productivity.</h1>
-        <img src="./images/slider_1.jpg" alt="" />
+        <img data-lazy="./images/slider_1.jpg" alt="Boost Productivity" />
       </div>
       <div class="slide_2">
         <h1>
           Be on top <br />
           of your game.
         </h1>
-        <img src="./images/slider_2.jpg" alt="" />
+        <img data-lazy="./images/slider_2.jpg" alt="Be on top of your game." />
       </div>
       <div class="slide_3">
         <h1>
@@ -79,13 +86,16 @@
           take control <br />
           of your Business.
         </h1>
-        <img src="./images/slider_3.jpg" alt="" />
+        <img
+          data-lazy="./images/slider_3.jpg"
+          alt="  Monitor and  take control of your Business."
+        />
       </div>
       <div class="slide_4">
         <h1>
-          Connect Anywhere...
+          Connect, Anywhere...
         </h1>
-        <img src="./images/slider_4.jpg" alt="" />
+        <img data-lazy="./images/slider_4.jpg" alt="Connect Anywhere..." />
       </div>
     </section>
     <section class="sd_wan_info">
@@ -114,7 +124,7 @@
             As a business owner, take full control over your business on-the-go
             and remotely, monitor your teams targets, your sales achievements
             and reach the next level of performance...
-            <br>
+            <br />
             <a href="./our_focus.html">Learn More</a>
           </p>
         </div>
@@ -126,8 +136,9 @@
             offerings, improve productivity and grow in the face of fierce
             competition and other challenges?<br /><br />
             Under the pressure of newer technology advancements, your financial
-            institution must deliberately enhance its competitiveness digitally...
-            <br>
+            institution must deliberately enhance its competitiveness
+            digitally...
+            <br />
             <a href="./our_focus.html">Learn More</a>
           </p>
         </div>
@@ -142,7 +153,7 @@
             Being offline isn’t an option; that’s why we take the time to
             understand your current infrastructure, your business model and
             challenges to develop an IT service that you can depend on...
-            <br>
+            <br />
             <a href="./our_focus.html">Learn More</a>
           </p>
         </div>
@@ -155,7 +166,7 @@
             continuous access and availability to Electronic Medical Records
             (EMR), facilitation and monitoring of real-time medical treatments
             in remote stations and the efficient executions of network dependent
-            operations... <br>
+            operations... <br />
             <a href="./our_focus.html">Learn More</a>
           </p>
         </div>
@@ -169,7 +180,7 @@
             <br /><br />
             A redundant network connectivity with the option to choose over
             multiple networks ensures that residents are always connected to the
-            internet... <br>
+            internet... <br />
             <a href="./our_focus.html">Learn More</a>
           </p>
         </div>
@@ -181,7 +192,7 @@
             establishing a unified overlay plane across disparate networks. We
             provide a centrally-hosted solution for management which enables
             your IT staff to remotely program edge devices and make changes in
-            network policies centrally, in real time... <br>
+            network policies centrally, in real time... <br />
             <a href="./our_focus.html">Learn More</a>
           </p>
         </div>
@@ -194,7 +205,6 @@
     <hr />
     <footer>
       <div>
-        <img src="./images/ANYWAIR_LOGO_new_1.svg" alt="" />
         <div class="footer_stay_connected">
           <h1>Stay Connected</h1>
           <ul>
@@ -205,6 +215,7 @@
             <ion-icon name="logo-youtube"></ion-icon>
           </ul>
         </div>
+        <img src="./images/ANYWAIR_LOGO_new_1.svg" alt="" />
       </div>
       <div>
         <div>
@@ -258,7 +269,7 @@
         <p>TELEWEB SERVICES LIMITED</p>
       </div>
       <div>
-        <p>&#169; TeleWeb 2019-2020</p>
+        <p>&#169; TeleWeb 2019</p>
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -268,6 +279,7 @@
     ></script>
     <script>
       $('.hero_banner').slick({
+        lazyLoad: 'ondemand',
         infinite: true,
         autoplay: true,
         autoplaySpeed: 3000,

@@ -55,12 +55,12 @@ a:link {
   background-position: center;
   background-size: cover;
 }
-.three_overlay_menu > a:nth-of-type(2) {
+.three_overlay_menu > a:nth-of-type(3) {
   background: url(./images/index_office_in_a_box.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
-.three_overlay_menu > a:nth-of-type(3) {
+.three_overlay_menu > a:nth-of-type(2) {
   background: url(./images/index_sdwan.jpg) no-repeat;
   background-position: center;
   background-size: cover;
