@@ -737,6 +737,7 @@ footer h1 {
   }
   .our_focus_sections > div p {
     padding: 10px;
+    margin-bottom: 0px;
   }
   .our_focus_banner {
     height: 300px;
@@ -748,9 +749,17 @@ footer h1 {
   }
   .our_focus_sections > div:nth-of-type(odd) > img {
     margin-right: 0px;
+    max-width: 100%;
   }
   .our_focus_sections > div:nth-of-type(even) > img {
     margin-left: 0px;
+    max-width: 100%;
+  }
+  .our_focus_sections > div > div {
+    margin-left: 10px;
+  }
+  .our_focus_sections h3 {
+    padding-left: 10px;
   }
   /* .our_focus_sections > div:nth-of-type(odd) {
     flex-direction: column-reverse;
@@ -921,7 +930,6 @@ footer h1 {
 }
 
 .contact_main_sub1 > div {
-  /* flex: 1; */
   background: #2d135a;
   padding: 40px;
   color: #fff;
@@ -961,7 +969,7 @@ footer h1 {
   font-size: 14px;
   background: #fff;
   width: 100%;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1006,8 +1014,8 @@ footer h1 {
   .contact_banner h1 {
     font-size: 50px;
   }
-  .contact_main_sub1 div {
-    padding: 10px;
+  .contact_main_sub1 > div {
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -1829,11 +1837,17 @@ footer h1 {
   }
 }
 @media (max-width: 575.98px) {
+  .office_box_banner h1 {
+    font-size: 50px;
+  }
   .office_box_section4 > div:nth-of-type(2) div:not(:nth-of-type(3)) {
     border-right: 0;
   }
   .office_box_banner {
     height: 300px;
+  }
+  .office_box_section2 > div {
+    margin-bottom: 20px;
   }
   .office_box_section2 > div:nth-of-type(1) div img {
     max-width: 100%;
@@ -1852,6 +1866,17 @@ footer h1 {
   }
   .office_box_section5 p:first-of-type {
     padding: 20px;
+  }
+  .office_box_section4_sub1 ul li {
+    width: 100%;
+  }
+  .office_box_section4_sub1 {
+    margin-bottom: 20px;
+  }
+  .office_box_section4_sub2 > div {
+    justify-content: start;
+    padding-left: 40px;
+    margin-left: 20px;
   }
 }
 
@@ -2026,6 +2051,15 @@ footer h1 {
   }
   .support_section2_accordion_title h3 {
     padding-left: 20px;
+  }
+  .support_section1 div h1 {
+    font-size: 30px;
+  }
+  .support_section2_accordion_content {
+    padding: 10px 0 0 20px;
+  }
+  .support_section4 div {
+    padding: 20px;
   }
 }
 /********* Product ********/
