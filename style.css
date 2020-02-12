@@ -559,17 +559,17 @@ footer img {
   color: #2d135a;
   font-size: 25px;
 }
-.footer_stay_connected ion-icon:nth-of-type(1) {
+.footer_stay_connected a:nth-of-type(1) ion-icon {
   color: #3b5998;
 }
-.footer_stay_connected ion-icon:nth-of-type(2) {
+.footer_stay_connected a:nth-of-type(2) ion-icon {
   color: #00acee;
 }
 
-.footer_stay_connected ion-icon:nth-of-type(4) {
+.footer_stay_connected a:nth-of-type(4) ion-icon{
   color: #0077b5;
 }
-.footer_stay_connected ion-icon:nth-of-type(5) {
+.footer_stay_connected a:nth-of-type(5) ion-icon {
   color: #c4302b;
 }
 footer h1 {
@@ -2035,7 +2035,7 @@ footer h1 {
 }
 .support_section5 {
   margin: auto;
-  background: url(./images/blue_ques_banner.png) no-repeat;
+  background: url(./images/blue_ques_banner.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   height: 300px;
