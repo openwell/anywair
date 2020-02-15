@@ -17,7 +17,7 @@ const accordions = document.querySelectorAll(
 );
 const contents = document.querySelectorAll(
   '.support_section2_accordion_content'
-);
+); 
 const icons = document.querySelectorAll('.add-icons');
 const removeAllBlock = () => {
   [...contents].forEach(elem => {
@@ -75,3 +75,18 @@ function myMap() {
   var marker = new google.maps.Marker({ position: uluru, map: map });
 }
 
+// Google Analytics
+const ready = function() {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-158195252-1';
+  document.body.appendChild(script);
+};
+
+document.onload = ready()
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-158195252-1');
