@@ -17,7 +17,7 @@ const accordions = document.querySelectorAll(
 );
 const contents = document.querySelectorAll(
   '.support_section2_accordion_content'
-);
+); 
 const icons = document.querySelectorAll('.add-icons');
 const removeAllBlock = () => {
   [...contents].forEach(elem => {

@@ -566,7 +566,7 @@ footer img {
   color: #00acee;
 }
 
-.footer_stay_connected a:nth-of-type(4) ion-icon{
+.footer_stay_connected a:nth-of-type(4) ion-icon {
   color: #0077b5;
 }
 .footer_stay_connected a:nth-of-type(5) ion-icon {
@@ -1937,6 +1937,7 @@ footer h1 {
 .support_section2_accordion_title ion-icon {
   font-size: 20px;
   vertical-align: text-bottom;
+  width: 24px;
 }
 
 .support_section2_accordions {
@@ -1950,6 +1951,8 @@ footer h1 {
 }
 .support_section2_accordion_title {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 .support_section2_accordion_title:hover {
   color: rgba(0, 0, 0, 0.8);
@@ -1970,23 +1973,25 @@ footer h1 {
 
 .support_section2_accordion_content {
   padding: 10px 0 0 80px;
-  max-height: 0;
+  display: none;
+  /* max-height: 0;
   opacity: 0;
-  transition: opacity 0.3s ease-out, max-height 0.3s linear;
+  transition: opacity 0.3s ease-out, max-height 0.3s linear; */
 }
 .support_section2_accordion_content p {
   font-weight: 200;
   padding: 0px 0 0 20px;
   border-left: 1px solid #2d135a;
-  color: rgb(179, 179, 179);
+  color: rgb(130, 130, 130);
 }
 .displayNone {
   display: block;
 }
 .displayNone2 {
-  max-height: 500px;
+  display: block;
+  /* max-height: 500px;
   opacity: 1;
-  transition: opacity 1s ease-in, max-height 0.5s linear;
+  transition: opacity 1s ease-in, max-height 0.5s linear; */
 }
 
 .support_section3 {
@@ -2038,11 +2043,26 @@ footer h1 {
   background: url(./images/blue_ques_banner.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.support_section5 h1 {
+  color: #fff;
+  font-size: 50px;
+  background: #00000063;
+  padding: 10px;
 }
 @media (max-width: 767.98px) {
   .support_section1 {
     background-position: right;
+  }
+  .support_section5 {
+    background-position: right;
+  }
+  .support_section5 h1 {
+    font-size: 40px;
   }
 }
 @media (max-width: 575.98px) {
@@ -2060,6 +2080,12 @@ footer h1 {
   }
   .support_section4 div {
     padding: 20px;
+  }
+  .support_section5 {
+    height: 300px;
+  }
+  .support_section5 h1 {
+    font-size: 25px;
   }
 }
 /********* Product ********/
@@ -2135,7 +2161,7 @@ footer h1 {
 .product_section3 th {
   padding: 10px;
   text-align: left;
-  background: #764cc0;
+  background: #2d135a;
   color: #fff;
 }
 .product_section3 td {
@@ -2201,6 +2227,31 @@ footer h1 {
     width: 100%;
   }
 }
+
+/********* Policy********/
+/************************/
+.policy_section1 {
+  max-width: 1024px;
+  margin: auto;
+}
+.policy_section1 div {
+  line-height: 1.5;
+  padding: 20px;
+}
+.policy_section1 div p {
+  padding-bottom: 20px;
+  text-align: justify;
+  color: rgba(12, 18, 28, 0.6);
+}
+.policy_section1 div h1 {
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+.policy_section1 div h1:first-of-type {
+  font-size: 40px;
+  font-weight: 700;
+}
+
 /* @media (max-width: 575.98px) {
 }
 
