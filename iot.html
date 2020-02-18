@@ -9,7 +9,7 @@
     type="module"
     src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
   ></script>
-    <link rel="stylesheet" href="style.css?v=2.0" />
+    <link rel="stylesheet" href="style.css?v=3.0" />
   </head>
   <body>
     <header>
@@ -164,15 +164,15 @@
     </section>
     <section class="iot_section7">
       <h1>Schedule a call for a demostration</h1>
-      <form action="" class="iot_section7_form">
+      <form class="iot_section7_form" action="https://formspree.io/xlebqgdn" method="POST">
         <div class="iot_section7_form_sub1">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Phone" />
+          <input type="text" placeholder="Name" name="name" required/>
+          <input type="email" placeholder="Email" name="_replyto" required/>
+          <input type="tel" placeholder="Phone" name="mobile" required minlength="11"/>
         </div>
         <div class="iot_section7_form_sub2">
           <textarea
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="10"
@@ -203,9 +203,9 @@
           <ul>
             <a href="./support.html">FAQ</a>
             <br />
-            <a href="./support.html">Documents</a>
+            <a href="./support.html?#documents">Documents</a>
             <br />
-            <a href="">Download App</a>
+            <a href="./support.html?#download_app">Download App</a>
             <br />
           </ul>
         </div>
@@ -227,8 +227,6 @@
           <a href="">Career</a>
           <br />
           <a href="./policies.html">Policies</a>
-          <br />
-          <a href="">Download App</a>
         </ul>
       </div>
       <div class="footer_support">

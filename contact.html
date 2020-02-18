@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css?v=2.0" />
+    <link rel="stylesheet" href="style.css?v=3.0" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
@@ -93,28 +93,27 @@
         </div>
         <div>
           <h1>Contact Sales</h1>
-          <form class="contact_form">
+          <form class="contact_form" action="https://formspree.io/xlebqgdn" method="POST">
             <div>
               <label for="">Your Name *</label>
-              <input type="text" />
+              <input type="text" name='name' required/>
             </div>
             <div>
               <label for="">Business Email *</label>
-              <input type="email" />
+              <input type="email" name='_replyto' required/>
             </div>
             <div>
               <label for="">Your Phone * </label>
-              <input type="tel" />
+              <input type="number" name='mobile' required minlength="11"/>
             </div>
             <div>
               <label for="">Company Name *</label>
-              <input type="text" />
+              <input type="text" name='company_name' required/>
             </div>
             <div>
               <label for="">Message </label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea required id="" cols="30" rows="10" name='message'></textarea>
             </div>
-
             <button>Submit</button>
           </form>
         </div>
@@ -144,9 +143,9 @@
           <ul>
             <a href="./support.html">FAQ</a>
             <br />
-            <a href="./support.html">Documents</a>
+            <a href="./support.html?#documents">Documents</a>
             <br />
-            <a href="">Download App</a>
+            <a href="./support.html?#download_app">Download App</a>
             <br />
           </ul>
         </div>
@@ -168,8 +167,6 @@
           <a href="">Career</a>
           <br />
           <a href="./policies.html">Policies</a>
-          <br />
-          <a href="">Download App</a>
         </ul>
       </div>
       <div class="footer_support">
