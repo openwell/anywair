@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css?v=2.0" />
+    <link rel="stylesheet" href="style.css?v=5.0" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
@@ -32,9 +32,9 @@
           <li class="header_nav_product">
             <a href="/product.html">Products</a>
             <ul class="header_nav_product_layer1">
-              <a href="/product.html">AN-150</a>
-              <a href="/product.html">AN-300</a>
-              <a href="/product.html">AN-300</a>
+              <a href="./product.html?#an-series">AN-150</a>
+              <a href="./product.html?#an-series">AN-300</a>
+              <a href="./product.html?#an-series">AN-300</a>
             </ul>
           </li>
           <li><a href="./support.html">Support</a></li>
@@ -60,9 +60,9 @@
           <li class="menu_nav_brand">
             <a href="#">Products <ion-icon name="arrow-dropdown"></ion-icon></a>
             <ul class="menu_nav_brand_layer1">
-              <a href="/product.html">AN-150</a>
-              <a href="/product.html">AN-300</a>
-              <a href="/product.html">AN-500</a>
+              <a href="./product.html?#an-series">AN-150</a>
+              <a href="./product.html?#an-series">AN-300</a>
+              <a href="./product.html?#an-series">AN-500</a>
             </ul>
           </li>
           <li><a href="./support.html">Support</a></li>
@@ -92,29 +92,36 @@
           </p>
         </div>
         <div>
+          <h1 id="success_message">Message Sent</h1>
+          <h1 id="error_message">Message Failed</h1>
           <h1>Contact Sales</h1>
-          <form class="contact_form">
+          <form class="contact_form" onsubmit="return sendForm()">
             <div>
               <label for="">Your Name *</label>
-              <input type="text" />
+              <input type="text" name="name" required />
             </div>
             <div>
               <label for="">Business Email *</label>
-              <input type="email" />
+              <input type="email" name="_replyto" required />
             </div>
             <div>
               <label for="">Your Phone * </label>
-              <input type="tel" />
+              <input type="number" name="mobile" required minlength="11" />
             </div>
             <div>
               <label for="">Company Name *</label>
-              <input type="text" />
+              <input type="text" name="company_name" required />
             </div>
             <div>
               <label for="">Message </label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea
+                required
+                id=""
+                cols="30"
+                rows="10"
+                name="message"
+              ></textarea>
             </div>
-
             <button>Submit</button>
           </form>
         </div>
@@ -129,11 +136,19 @@
         <div class="footer_stay_connected">
           <h1>Stay Connected</h1>
           <ul>
-            <a href="https://www.facebook.com/connect.anywair/"> <ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.facebook.com/connect.anywair/">
+              <ion-icon name="logo-facebook"></ion-icon
+            ></a>
             <a href="#"> <ion-icon name="logo-twitter"></ion-icon></a>
-            <a href="https://www.instagram.com/connect.anywair"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://www.linkedin.com/company/connect-anywair"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="https://www.youtube.com/channel/UCQYFkfCC1aXKs0duWdW99-Q"> <ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="https://www.instagram.com/connect.anywair"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+            <a href="https://www.linkedin.com/company/connect-anywair"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a href="https://www.youtube.com/channel/UCQYFkfCC1aXKs0duWdW99-Q">
+              <ion-icon name="logo-youtube"></ion-icon
+            ></a>
           </ul>
         </div>
         <img src="./images/ANYWAIR_LOGO_new_1.svg" alt="" />
@@ -144,9 +159,9 @@
           <ul>
             <a href="./support.html">FAQ</a>
             <br />
-            <a href="./support.html">Documents</a>
+            <a href="./support.html?#documents">Documents</a>
             <br />
-            <a href="">Download App</a>
+            <a href="./support.html?#download_app">Download App</a>
             <br />
           </ul>
         </div>
@@ -155,11 +170,11 @@
         <h1>Products</h1>
         <ul>
           <a href="http://officeinabox.anywair.ng/"><p>Office in Box</p></a>
-          <a href="./product.html">AN-150</a>
+          <a href="./product.html?#an-series">AN-150</a>
           <br />
-          <a href="./product.html">AN-300</a>
+          <a href="./product.html?#an-series">AN-300</a>
           <br />
-          <a href="./product.html">AN-500</a>
+          <a href="./product.html?#an-series">AN-500</a>
         </ul>
       </div>
       <div>
@@ -168,8 +183,6 @@
           <a href="">Career</a>
           <br />
           <a href="./policies.html">Policies</a>
-          <br />
-          <a href="">Download App</a>
         </ul>
       </div>
       <div class="footer_support">
@@ -199,5 +212,5 @@
     defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoGz45QB1L1rXbRRxgtrtLhy0DJi_w-ac&callback=myMap"
   ></script>
-  <script src="./index.js?v=2.0"></script>
+  <script src="./index.js?v=3.0"></script>
 </html>

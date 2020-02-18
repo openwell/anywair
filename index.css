@@ -115,6 +115,9 @@ footer div img {
 footer ul {
   padding: 10px;
 }
+footer ul a:first-of-type{
+  cursor: default;
+}
 footer ul a {
   padding: 10px 10px 10px 0;
 }

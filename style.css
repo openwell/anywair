@@ -7,7 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -21,6 +23,17 @@ body {
 }
 button {
   cursor: pointer;
+}
+#success_message,
+#error_message {
+  display: none;
+  font-weight: 200;
+}
+#success_message {
+  color: #1ad41a;
+}
+#error_message  {
+  color: #f13629;
 }
 a:visited,
 a:link {
@@ -2001,8 +2014,16 @@ footer h1 {
 .support_section3 div {
   padding: 10px;
 }
-.support_section3 p {
+.support_section3 a {
+  display: block;
   margin-bottom: 10px;
+}
+.support_section3 a:link,
+.support_section3 a:visited {
+  color: #2d135a;
+}
+.support_section3 a img {
+  margin-right: 10px;
 }
 .support_section4 {
   max-width: 700px;

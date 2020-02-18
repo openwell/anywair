@@ -17,7 +17,7 @@ const accordions = document.querySelectorAll(
 );
 const contents = document.querySelectorAll(
   '.support_section2_accordion_content'
-); 
+);
 const icons = document.querySelectorAll('.add-icons');
 const removeAllBlock = () => {
   [...contents].forEach(elem => {
@@ -83,10 +83,51 @@ const ready = function() {
   document.body.appendChild(script);
 };
 
-document.onload = ready()
+document.onload = ready();
 
 window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
+function gtag() {
+  dataLayer.push(arguments);
+}
 gtag('js', new Date());
 
 gtag('config', 'UA-158195252-1');
+
+// form submission
+const sendForm = async () => {
+  event.preventDefault();
+  const form = event.target;
+  const name = form.elements[0].value;
+  const _replyto = form.elements[1].value;
+  const mobile = form.elements[2].value;
+  const company_name = form.elements[3].value || null;
+  const message = form.elements[4].value;
+
+  const data = { name, _replyto, mobile, company_name, message };
+
+  const post = (url, data) => {
+    return new Request(url, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        Accept: 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      }
+    });
+  };
+  try {
+    const response = await fetch(post('https://formspree.io/xlebqgdn', data));
+    const response2 = await response.json();
+    form.reset();
+    document.getElementById('success_message').style.display = 'block';
+    setTimeout(function() {
+      document.getElementById('success_message').style.display = 'none';
+    }, 5000);
+
+  } catch (error) {
+    document.getElementById('error_message').style.display = 'block';
+    setTimeout(function() {
+      document.getElementById('error_message').style.display = 'none';
+    }, 5000);
+  }
+};
