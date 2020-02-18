@@ -95,6 +95,7 @@
           <h1 id="success_message">Message Sent</h1>
           <h1 id="error_message">Message Failed</h1>
           <h1>Contact Sales</h1>
+<<<<<<< HEAD
           <form class="contact_form" onsubmit="return sendForm()">
             <div>
               <label for="">Your Name *</label>
@@ -121,6 +122,28 @@
                 rows="10"
                 name="message"
               ></textarea>
+=======
+          <form class="contact_form" action="https://formspree.io/xlebqgdn" method="POST">
+            <div>
+              <label for="">Your Name *</label>
+              <input type="text" name='name' required/>
+            </div>
+            <div>
+              <label for="">Business Email *</label>
+              <input type="email" name='_replyto' required/>
+            </div>
+            <div>
+              <label for="">Your Phone * </label>
+              <input type="number" name='mobile' required minlength="11"/>
+            </div>
+            <div>
+              <label for="">Company Name *</label>
+              <input type="text" name='company_name' required/>
+            </div>
+            <div>
+              <label for="">Message </label>
+              <textarea required id="" cols="30" rows="10" name='message'></textarea>
+>>>>>>> 7ead60c96cedf691f690d15f84193185dfefc9f7
             </div>
             <button>Submit</button>
           </form>
