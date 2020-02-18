@@ -9,7 +9,7 @@
     type="module"
     src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
   ></script>
-    <link rel="stylesheet" href="style.css?v=2.0" />
+    <link rel="stylesheet" href="style.css?v=5.0" />
   </head>
   <body>
     <header>
@@ -32,9 +32,9 @@
           <li class="header_nav_product">
             <a href="/product.html">Products</a>
             <ul class="header_nav_product_layer1">
-              <a href="/product.html">AN-150</a>
-              <a href="/product.html">AN-300</a>
-              <a href="/product.html">AN-300</a>
+              <a href="./product.html?#an-series">AN-150</a>
+              <a href="./product.html?#an-series">AN-300</a>
+              <a href="./product.html?#an-series">AN-300</a>
             </ul>
           </li>
           <li><a href="./support.html">Support</a></li>
@@ -60,9 +60,9 @@
           <li class="menu_nav_brand">
             <a href="#">Products <ion-icon name="arrow-dropdown"></ion-icon></a>
             <ul class="menu_nav_brand_layer1">
-              <a href="/product.html">AN-150</a>
-              <a href="/product.html">AN-300</a>
-              <a href="/product.html">AN-500</a>
+              <a href="./product.html?#an-series">AN-150</a>
+              <a href="./product.html?#an-series">AN-300</a>
+              <a href="./product.html?#an-series">AN-500</a>
             </ul>
           </li>
           <li><a href="./support.html">Support</a></li>
@@ -163,16 +163,22 @@
       </div>
     </section>
     <section class="iot_section7">
+      <h1 id="success_message">Message Sent</h1>
+      <h1 id="error_message">Message Failed</h1>
       <h1>Schedule a call for a demostration</h1>
-      <form action="" class="iot_section7_form">
+<<<<<<< HEAD
+      <form class="iot_section7_form" onsubmit="return sendForm()">
+=======
+      <form class="iot_section7_form" action="https://formspree.io/xlebqgdn" method="POST">
+>>>>>>> 7ead60c96cedf691f690d15f84193185dfefc9f7
         <div class="iot_section7_form_sub1">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Phone" />
+          <input type="text" placeholder="Name" name="name" required/>
+          <input type="email" placeholder="Email" name="_replyto" required/>
+          <input type="tel" placeholder="Phone" name="mobile" required minlength="11"/>
         </div>
         <div class="iot_section7_form_sub2">
           <textarea
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="10"
@@ -203,9 +209,9 @@
           <ul>
             <a href="./support.html">FAQ</a>
             <br />
-            <a href="./support.html">Documents</a>
+            <a href="./support.html?#documents">Documents</a>
             <br />
-            <a href="">Download App</a>
+            <a href="./support.html?#download_app">Download App</a>
             <br />
           </ul>
         </div>
@@ -214,11 +220,11 @@
         <h1>Products</h1>
         <ul>
           <a href="http://officeinabox.anywair.ng/"><p>Office in Box</p></a>
-          <a href="./product.html">AN-150</a>
+          <a href="./product.html?#an-series">AN-150</a>
           <br />
-          <a href="./product.html">AN-300</a>
+          <a href="./product.html?#an-series">AN-300</a>
           <br />
-          <a href="./product.html">AN-500</a>
+          <a href="./product.html?#an-series">AN-500</a>
         </ul>
       </div>
       <div>
@@ -227,8 +233,6 @@
           <a href="">Career</a>
           <br />
           <a href="./policies.html">Policies</a>
-          <br />
-          <a href="">Download App</a>
         </ul>
       </div>
       <div class="footer_support">
@@ -252,6 +256,6 @@
         <p>&#169; TeleWeb 2019</p>
       </div>
     </section>
-    <script src="./index.js?v=2.0"></script>
+    <script src="./index.js?v=3.0"></script>
   </body>
 </html>
