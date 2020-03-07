@@ -864,6 +864,11 @@ footer h1 {
   line-height: 1.5;
   font-weight: 200;
 }
+.leadership_team{
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
 @media only screen and (max-width: 767.98px) {
   .about_banner h1 {
     font-size: 80px;
